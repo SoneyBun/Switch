@@ -1,4 +1,4 @@
-public class Question1.java {
+public class Question1 {
     public static void main(String[] args) {
         int apples = 2;
         double bananas = 4;

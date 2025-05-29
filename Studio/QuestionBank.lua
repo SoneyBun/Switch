@@ -1,6 +1,4 @@
-local QuestionBank = {}
-
-Here are 100 unique questions for the Math branch of the QuestionBank:
+local QuestionBank = {} -- In ReplicatedStorage
 
 QuestionBank.Math = {
     { Question = "What does Math.floor(3.9) return? (v1)", Answers = {"4.0", "3", "3.0", "4"}, CorrectAnswer = 3 },

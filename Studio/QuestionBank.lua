@@ -105,508 +105,118 @@ QuestionBank.Math = {
     { Question = "What does Math.log10(1000) return? (v93)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
     { Question = "What does Math.floor(Math.random() * 100) return? (v94)", Answers = {"An integer between 0 and 99", "An integer between 1 and 100", "A float between 0 and 100", "Always 0"}, CorrectAnswer = 1 },
     { Question = "What does Math.ceil(3.5) return? (v95)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 2}
+}
 
 QuestionBank.Object = {
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To compare object values", "To assign values", "To destroy objects", "To clone objects"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "hashCode()", "clone()", "toString()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Method list", "Hash value", "String representation", "Object address"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns package", "Returns superclass", "Returns object name", "Returns the runtime class"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"finalize()", "shutdown()", "deconstruct()", "destroy()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To compare object values", "To assign values", "To destroy objects"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "clone()", "hashCode()", "equals()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "Method list", "Object address", "String representation"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns the runtime class", "Returns superclass", "Returns package", "Returns object name"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"deconstruct()", "finalize()", "shutdown()", "destroy()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To assign values", "To compare object values", "To destroy objects"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "clone()", "toString()", "hashCode()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"String representation", "Object address", "Hash value", "Method list"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns object name", "Returns the runtime class", "Returns package", "Returns superclass"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"destroy()", "deconstruct()", "finalize()", "shutdown()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To clone objects", "To destroy objects", "To compare object values"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"hashCode()", "equals()", "toString()", "clone()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Object address", "String representation", "Hash value", "Method list"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns package", "Returns object name", "Returns the runtime class", "Returns superclass"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "destroy()", "deconstruct()", "finalize()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To compare object values", "To clone objects", "To assign values", "To destroy objects"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "hashCode()", "clone()", "toString()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Method list", "Hash value", "String representation", "Object address"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns superclass", "Returns object name", "Returns package", "Returns the runtime class"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"finalize()", "shutdown()", "deconstruct()", "destroy()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To compare object values", "To assign values", "To destroy objects"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "clone()", "hashCode()", "equals()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Method list", "Hash value", "Object address", "String representation"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns the runtime class", "Returns superclass", "Returns package", "Returns object name"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "finalize()", "deconstruct()", "destroy()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To assign values", "To compare object values", "To destroy objects"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "toString()", "clone()", "hashCode()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"String representation", "Method list", "Hash value", "Object address"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns superclass", "Returns the runtime class", "Returns package", "Returns object name"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"destroy()", "deconstruct()", "finalize()", "shutdown()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To destroy objects", "To clone objects", "To compare object values"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"hashCode()", "clone()", "toString()", "equals()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "String representation", "Method list", "Object address"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns superclass", "Returns object name", "Returns the runtime class", "Returns package"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"deconstruct()", "destroy()", "shutdown()", "finalize()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To compare object values", "To destroy objects", "To assign values", "To clone objects"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "hashCode()", "clone()", "equals()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "Object address", "String representation", "Method list"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns object name", "Returns package", "Returns superclass", "Returns the runtime class"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"finalize()", "shutdown()", "deconstruct()", "destroy()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To compare object values", "To clone objects", "To destroy objects"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "clone()", "hashCode()", "toString()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Object address", "Hash value", "Method list", "String representation"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns the runtime class", "Returns superclass", "Returns package", "Returns object name"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"deconstruct()", "finalize()", "destroy()", "shutdown()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To clone objects", "To compare object values", "To destroy objects"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"clone()", "toString()", "equals()", "hashCode()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"String representation", "Object address", "Hash value", "Method list"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns superclass", "Returns the runtime class", "Returns object name", "Returns package"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "destroy()", "finalize()", "deconstruct()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To destroy objects", "To assign values", "To clone objects", "To compare object values"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"hashCode()", "toString()", "clone()", "equals()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Object address", "String representation", "Method list", "Hash value"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns object name", "Returns package", "Returns the runtime class", "Returns superclass"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "deconstruct()", "destroy()", "finalize()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To compare object values", "To clone objects", "To destroy objects", "To assign values"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "hashCode()", "clone()", "toString()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "Object address", "String representation", "Method list"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns package", "Returns object name", "Returns superclass", "Returns the runtime class"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"finalize()", "shutdown()", "destroy()", "deconstruct()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To compare object values", "To destroy objects", "To assign values"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "equals()", "hashCode()", "clone()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "Object address", "Method list", "String representation"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns the runtime class", "Returns superclass", "Returns object name", "Returns package"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"deconstruct()", "finalize()", "shutdown()", "destroy()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To clone objects", "To compare object values", "To destroy objects"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"clone()", "equals()", "toString()", "hashCode()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"String representation", "Hash value", "Object address", "Method list"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns package", "Returns the runtime class", "Returns object name", "Returns superclass"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"destroy()", "shutdown()", "finalize()", "deconstruct()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To destroy objects", "To clone objects", "To assign values", "To compare object values"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"hashCode()", "equals()", "toString()", "clone()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Hash value", "String representation", "Object address", "Method list"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns object name", "Returns package", "Returns the runtime class", "Returns superclass"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "deconstruct()", "destroy()", "finalize()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To compare object values", "To destroy objects", "To clone objects", "To assign values"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "hashCode()", "equals()", "clone()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Method list", "Hash value", "String representation", "Object address"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns object name", "Returns superclass", "Returns package", "Returns the runtime class"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"finalize()", "deconstruct()", "destroy()", "shutdown()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To assign values", "To compare object values", "To clone objects", "To destroy objects"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"toString()", "clone()", "hashCode()", "equals()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Method list", "Object address", "Hash value", "String representation"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns the runtime class", "Returns object name", "Returns package", "Returns superclass"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "finalize()", "deconstruct()", "destroy()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To destroy objects", "To clone objects", "To compare object values", "To assign values"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"equals()", "toString()", "clone()", "hashCode()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"String representation", "Object address", "Method list", "Hash value"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns package", "Returns the runtime class", "Returns object name", "Returns superclass"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"shutdown()", "destroy()", "finalize()", "deconstruct()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the purpose of the equals() method?",
-		Answers = {"To clone objects", "To assign values", "To destroy objects", "To compare object values"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns a hash code for an object?",
-		Answers = {"hashCode()", "clone()", "toString()", "equals()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does the toString() method return?",
-		Answers = {"Object address", "String representation", "Hash value", "Method list"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does the getClass() method do?",
-		Answers = {"Returns superclass", "Returns object name", "Returns the runtime class", "Returns package"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method is called before an object is destroyed?",
-		Answers = {"destroy()", "deconstruct()", "shutdown()", "finalize()"},
-		CorrectAnswer = 4
-	},
+    { Question = "Which method returns a hash code for an object? (v1)", Answers = {"toString()", "equals()", "hashCode()", "getHash()"}, CorrectAnswer = 3 },
+    { Question = "Which method provides a string representation of an object? (v2)", Answers = {"show()", "print()", "toString()", "describe()"}, CorrectAnswer = 3 },
+    { Question = "What is the purpose of the equals() method in Java? (v3)", Answers = {"To compare object references", "To assign objects", "To compare object values", "To destroy objects"}, CorrectAnswer = 3 },
+    { Question = "Which method checks if two objects are equal? (v4)", Answers = {"equals()", "compare()", "isEqual()", "match()"}, CorrectAnswer = 1 },
+    { Question = "What does the clone() method do? (v5)", Answers = {"Creates a new object", "Copies the object", "Returns a reference", "None of the above"}, CorrectAnswer = 2 },
+    { Question = "What is the return type of the toString() method? (v6)", Answers = {"String", "Object", "int", "void"}, CorrectAnswer = 1 },
+    { Question = "What is the purpose of the finalize() method? (v7)", Answers = {"To clean up resources", "To compare objects", "To create objects", "To destroy objects"}, CorrectAnswer = 1 },
+    { Question = "Which method is used to compare two strings? (v8)", Answers = {"compare()", "equals()", "isEqual()", "match()"}, CorrectAnswer = 2 },
+    { Question = "What does the getClass() method return? (v9)", Answers = {"Class object", "String", "int", "void"}, CorrectAnswer = 1 },
+    { Question = "What is the purpose of the hashCode() method? (v10)", Answers = {"To return a unique identifier", "To compare objects", "To create a string", "To clone an object"}, CorrectAnswer = 1 },
+
+    { Question = "What does Object.clone() require? (v11)", Answers = {"Implements Cloneable", "Implements Serializable", "Overriding toString", "Overriding equals"}, CorrectAnswer = 1 },
+    { Question = "What happens if equals() is not overridden? (v12)", Answers = {"Compares references", "Compares object contents", "Throws exception", "Returns false always"}, CorrectAnswer = 1 },
+    { Question = "What package contains Object class? (v13)", Answers = {"java.lang", "java.util", "java.io", "java.net"}, CorrectAnswer = 1 },
+    { Question = "Can every class override finalize()? (v14)", Answers = {"Yes", "No", "Only abstract classes", "Only interfaces"}, CorrectAnswer = 1 },
+    { Question = "What does toString() default return? (v15)", Answers = {"ClassName@Hashcode", "Object contents", "Null", "ClassName"}, CorrectAnswer = 1 },
+    { Question = "Is hashCode() consistent with equals()? (v16)", Answers = {"It must be", "It doesn’t have to be", "Always inconsistent", "Undefined"}, CorrectAnswer = 1 },
+    { Question = "Which method compares objects for identity? (v17)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
+    { Question = "Does Object class implement Serializable? (v18)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+    { Question = "What is class Object’s superclass? (v19)", Answers = {"None", "Class", "java.lang.Object", "Object is root"}, CorrectAnswer = 4 },
+    { Question = "Is Object’s clone() method public? (v20)", Answers = {"Protected", "Public", "Private", "Default"}, CorrectAnswer = 1 },
+
+    { Question = "What exception does clone() throw if not supported? (v21)", Answers = {"CloneNotSupportedException", "ClassCastException", "NullPointerException", "IOException"}, CorrectAnswer = 1 },
+    { Question = "Is finalize() called for all objects? (v22)", Answers = {"Not guaranteed", "Always", "Never", "Only for garbage collected objects"}, CorrectAnswer = 1 },
+    { Question = "Can equals() method be called with null? (v23)", Answers = {"Yes", "No", "Throws error", "Depends on JVM"}, CorrectAnswer = 1 },
+    { Question = "What is the equals() contract? (v24)", Answers = {"Reflexive, symmetric, transitive, consistent", "Only symmetric", "No contract", "Random"}, CorrectAnswer = 1 },
+    { Question = "What does Object.wait() do? (v25)", Answers = {"Waits for notify()", "Pauses execution", "Stops thread", "Does nothing"}, CorrectAnswer = 1 },
+    { Question = "What does Object.notify() do? (v26)", Answers = {"Wakes one waiting thread", "Pauses thread", "Terminates thread", "Wakes all threads"}, CorrectAnswer = 1 },
+    { Question = "How to create a new Object instance? (v27)", Answers = {"new Object()", "Object()", "create Object()", "None of these"}, CorrectAnswer = 1 },
+    { Question = "Does Object have a default constructor? (v28)", Answers = {"Yes", "No", "Only for subclasses", "Depends on JVM"}, CorrectAnswer = 1 },
+    { Question = "What is the runtime class of an object? (v29)", Answers = {"Class returned by getClass()", "String representation", "Superclass", "null"}, CorrectAnswer = 1 },
+    { Question = "What is the default behavior of Object.equals()? (v30)", Answers = {"Reference equality", "Value equality", "Throws error", "Always false"}, CorrectAnswer = 1 },
+
+    { Question = "Which method provides class metadata? (v31)", Answers = {"getClass()", "getMeta()", "classInfo()", "classDetails()"}, CorrectAnswer = 1 },
+    { Question = "Can Object.toString() be overridden? (v32)", Answers = {"Yes", "No", "Only in subclasses", "Only with annotations"}, CorrectAnswer = 1 },
+    { Question = "Is Object.hashCode() overridden for custom classes? (v33)", Answers = {"Should be", "No", "Never", "Optional"}, CorrectAnswer = 1 },
+    { Question = "What does Object.finalize() throw? (v34)", Answers = {"Throwable", "Exception", "Error", "Nothing"}, CorrectAnswer = 1 },
+    { Question = "What does an Object reference point to? (v35)", Answers = {"Object in memory", "Class definition", "Function", "Null"}, CorrectAnswer = 1 },
+    { Question = "What is the role of java.lang.Object? (v36)", Answers = {"Root class of all classes", "Utility class", "Helper class", "Interface"}, CorrectAnswer = 1 },
+    { Question = "Which methods are final in Object? (v37)", Answers = {"wait(), notify(), notifyAll()", "equals(), hashCode()", "toString(), clone()", "None"}, CorrectAnswer = 1 },
+    { Question = "What synchronization does Object.wait() require? (v38)", Answers = {"Monitor lock", "No synchronization", "Static lock", "Class lock"}, CorrectAnswer = 1 },
+    { Question = "Is Object serializable by default? (v39)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+    { Question = "How to check if an object is an instance of a class? (v40)", Answers = {"instanceof operator", "is()", "check()", "instanceOf()"}, CorrectAnswer = 1 },
+
+    { Question = "What is the difference between == and equals()? (v41)", Answers = {"== compares references, equals compares contents", "Both compare contents", "Both compare references", "No difference"}, CorrectAnswer = 1 },
+    { Question = "What happens if you override equals() but not hashCode()? (v42)", Answers = {"Contract is broken, may cause hashing errors", "No problem", "Errors at runtime", "Compilation error"}, CorrectAnswer = 1 },
+    { Question = "What does Object.clone() produce? (v43)", Answers = {"Shallow copy by default", "Deep copy", "Reference copy", "Does not work"}, CorrectAnswer = 1 },
+    { Question = "Which method should be overridden together with equals()? (v44)", Answers = {"hashCode()", "toString()", "clone()", "finalize()"}, CorrectAnswer = 1 },
+    { Question = "What is the output of default toString() method? (v45)", Answers = {"ClassName@HexHashcode", "Object contents", "null", "ClassName"}, CorrectAnswer = 1 },
+    { Question = "Can finalize() be used to release resources? (v46)", Answers = {"Yes, but not recommended", "No", "Always", "Never"}, CorrectAnswer = 1 },
+    { Question = "Does every object have a monitor? (v47)", Answers = {"Yes for synchronization", "No", "Only threads", "Only locks"}, CorrectAnswer = 1 },
+    { Question = "What does Object.notifyAll() do? (v48)", Answers = {"Wakes all waiting threads", "Wakes one thread", "Pauses all threads", "Terminates threads"}, CorrectAnswer = 1 },
+    { Question = "What interface must a class implement to be cloneable? (v49)", Answers = {"Cloneable", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
+    { Question = "Is Object class itself cloneable? (v50)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+
+    { Question = "What exceptions can finalize() throw? (v51)", Answers = {"Nothing, should not throw exceptions", "Any exception", "IOException", "RuntimeException"}, CorrectAnswer = 1 },
+    { Question = "When is finalize() called? (v52)", Answers = {"Before garbage collection", "After garbage collection", "After object creation", "Never"}, CorrectAnswer = 1 },
+    { Question = "How are exceptions handled in equals()? (v53)", Answers = {"Should handle null gracefully", "Throws exception", "Returns false only", "Always true"}, CorrectAnswer = 1 },
+    { Question = "Is Object.equals() final? (v54)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only in subclasses"}, CorrectAnswer = 1 },
+    { Question = "Are primitive types subclasses of Object? (v55)", Answers = {"No", "Yes", "Only boxed types", "Sometimes"}, CorrectAnswer = 1 },
+    { Question = "Can Object have abstract methods? (v56)", Answers = {"No, it's a concrete class", "Yes", "Only interfaces", "Only abstract classes"}, CorrectAnswer = 1 },
+    { Question = "Which method returns the class loader of an object? (v57)", Answers = {"getClass().getClassLoader()", "getClassLoader()", "loader()", "classLoader()"}, CorrectAnswer = 1 },
+    { Question = "What is the output type of Object.toString()? (v58)", Answers = {"String", "Object", "Integer", "void"}, CorrectAnswer = 1 },
+    { Question = "Can an object be cast to Object? (v59)", Answers = {"Yes", "No", "Only subclasses", "Only interfaces"}, CorrectAnswer = 1 },
+    { Question = "What is the default size of Object in memory? (v60)", Answers = {"Depends on JVM", "16 bytes", "8 bytes", "4 bytes"}, CorrectAnswer = 1 },
+
+    { Question = "Is Object.hashCode() method final? (v61)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only for subclasses"}, CorrectAnswer = 1 },
+    { Question = "Which method compares object references? (v62)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
+    { Question = "What happens if clone() is not supported? (v63)", Answers = {"Throws CloneNotSupportedException", "Returns null", "Returns same reference", "Silent fail"}, CorrectAnswer = 1 },
+    { Question = "Is Object.toString() synchronized? (v64)", Answers = {"No", "Yes", "Only in subclasses", "Depends"}, CorrectAnswer = 1 },
+    { Question = "Which class is the superclass of all classes? (v65)", Answers = {"java.lang.Object", "java.lang.Class", "java.lang.String", "java.lang.System"}, CorrectAnswer = 1 },
+    { Question = "Can Object be instantiated? (v66)", Answers = {"Yes", "No, abstract", "Only via subclasses", "Only via reflection"}, CorrectAnswer = 1 },
+    { Question = "What method returns the superclass of an object’s class? (v67)", Answers = {"getClass().getSuperclass()", "getSuper()", "superclass()", "getParentClass()"}, CorrectAnswer = 1 },
+    { Question = "What does Object.getClass() return on an array? (v68)", Answers = {"Class object for array type", "String", "null", "Error"}, CorrectAnswer = 1 },
+    { Question = "What is the result of Object.hashCode() by default? (v69)", Answers = {"A unique integer based on memory address", "0", "-1", "Error"}, CorrectAnswer = 1 },
+    { Question = "Is Object.finalize() guaranteed to be called? (v70)", Answers = {"No, not guaranteed", "Yes", "Only if explicitly called", "Only in certain JVMs"}, CorrectAnswer = 1 },
+
+    { Question = "What is the typical use of Object.finalize()? (v71)", Answers = {"Cleanup before garbage collection", "Initializes object", "Clones object", "Deletes object"}, CorrectAnswer = 1 },
+    { Question = "Which standard class is the ultimate ancestor class? (v72)", Answers = {"Object", "Class", "String", "Serializable"}, CorrectAnswer = 1 },
+    { Question = "Can Object be cast to other class safely? (v73)", Answers = {"Only if instance of that class", "Always", "Never", "Only primitive types"}, CorrectAnswer = 1 },
+    { Question = "What does Object.getClass().getName() return? (v74)", Answers = {"Fully qualified class name", "Simple class name", "Empty string", "null"}, CorrectAnswer = 1 },
+    { Question = "What is the base method for all exceptions? (v75)", Answers = {"Throwable", "Exception", "Object", "Error"}, CorrectAnswer = 1 },
+    { Question = "Which method returns the identity hash code of an object? (v76)", Answers = {"System.identityHashCode(obj)", "obj.hashCode()", "obj.toString()", "obj.getHash()"}, CorrectAnswer = 1 },
+    { Question = "Is the hashCode() contract compatible with equals()? (v77)", Answers = {"Must be consistent", "No relation", "Opposite", "Random"}, CorrectAnswer = 1 },
+    { Question = "Which method to override for meaningful string representation? (v78)", Answers = {"toString()", "equals()", "hashCode()", "finalize()"}, CorrectAnswer = 1 },
+    { Question = "What’s the difference between shallow and deep copy? (v79)", Answers = {"Shallow copies references, deep copies objects", "Opposite", "No difference", "Shallow copies values only"}, CorrectAnswer = 1 },
+    { Question = "What interface should be implemented for deep cloning? (v80)", Answers = {"Cloneable (with custom implementation)", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
+
+    { Question = "What does Object.wait(long millis) do? (v81)", Answers = {"Waits up to millis or until notified", "Waits forever", "Notifies threads", "Terminates thread"}, CorrectAnswer = 1 },
+    { Question = "Is Object.hashCode() thread-safe? (v82)", Answers = {"Yes", "No", "Sometimes", "Depends on JVM"}, CorrectAnswer = 1 },
+    { Question = "What is the effect of overriding equals() but not hashCode()? (v83)", Answers = {"Collection misbehavior", "Compile error", "Runtime exception", "No effect"}, CorrectAnswer = 1 },
+    { Question = "Does Object.equals() accept null as argument? (v84)", Answers = {"Yes, should return false", "No, throws exception", "Always true", "Undefined"}, CorrectAnswer = 1 },
+    { Question = "What does Object.notify() do? (v85)", Answers = {"Wakes one waiting thread", "Wakes all waiting threads", "Pauses execution", "Terminates thread"}, CorrectAnswer = 1 },
+    { Question = "Can finalize() resurrect an object? (v86)", Answers = {"Yes, but discouraged", "No", "Always", "Never"}, CorrectAnswer = 1 },
+    { Question = "When does finalize() run? (v87)", Answers = {"Before garbage collection", "After garbage collection", "On object creation", "On every method call"}, CorrectAnswer = 1 },
+    { Question = "What are typical uses of Object methods? (v88)", Answers = {"Representation, identity, equality, cloning", "Parsing", "IO operations", "Exception handling"}, CorrectAnswer = 1 },
+    { Question = "Is cloning deep by default in Object? (v89)", Answers = {"No, shallow cloning only", "Yes, always deep", "No, throws exception", "Depends on class"}, CorrectAnswer = 1 },
+    { Question = "What does Object.getClass().getSuperclass() return for Object? (v90)", Answers = {"null", "Object", "Class", "java.lang.Object"}, CorrectAnswer = 1 },
+
+    { Question = "Is Object a final class? (v91)", Answers = {"No", "Yes", "Only in some runtimes", "Depends on JVM"}, CorrectAnswer = 1 },
+    { Question = "What is the result of calling Object.class? (v92)", Answers = {"Class object representing Object", "Error", "null", "Object instance"}, CorrectAnswer = 1 },
+    { Question = "What is the purpose of Object.getClass()? (v93)", Answers = {"Returns runtime class of object", "Returns class name string", "Returns superclass", "Returns hash code"}, CorrectAnswer = 1 },
+    { Question = "What happens if equals() is not reflexive? (v94)", Answers = {"Violates contract, unpredictable behavior", "Works fine", "Causes compile error", "Runtime exception"}, CorrectAnswer = 1 },
+    { Question = "Which method is used for synchronization on an Object? (v95)", Answers = {"synchronized block/method", "wait()", "notify()", "hashCode()"}, CorrectAnswer = 1 },
+    { Question = "Is Object.equals() null-safe? (v96)", Answers = {"Yes, returns false if other is null", "No, throws NPE", "Always true", "Undefined"}, CorrectAnswer = 1 },
+    { Question = "What does Object.wait() release when called? (v97)", Answers = {"Monitor lock", "Nothing", "System resources", "Memory"}, CorrectAnswer = 1 },
+    { Question = "What is the default return value of Object.hashCode() for two different objects? (v98)", Answers = {"Different hash codes", "Same hash code", "Zero", "Undefined"}, CorrectAnswer = 1 },
+    { Question = "Is Object.hashCode() method deterministic? (v99)", Answers = {"Yes, within one execution of JVM", "No", "Always zero", "Varies randomly"}, CorrectAnswer = 1 },
+    { Question = "When overriding equals and hashCode, what must be ensured? (v100)", Answers = {"Equal objects must have equal hash codes", "Hash codes must be unique", "Always false", "Always true"}, CorrectAnswer = 1 },
 }
 
 QuestionBank.String = {

@@ -1,1228 +1,446 @@
 local QuestionBank = {} -- In ReplicatedStorage
 
 QuestionBank.Math = {
-    { Question = "What does Math.floor(3.9) return? (v1)", Answers = {"4.0", "3", "3.0", "4"}, CorrectAnswer = 3 },
-    { Question = "Which method returns the absolute value of a number? (v2)", Answers = {"Math.abs()", "Math.floor()", "Math.signum()", "Math.round()"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sqrt(25) return? (v3)", Answers = {"4", "5", "6", "25"}, CorrectAnswer = 2 },
-    { Question = "What does Math.ceil(3.1) return? (v4)", Answers = {"3", "3.0", "4", "4.0"}, CorrectAnswer = 3 },
-    { Question = "What does Math.round(3.5) return? (v5)", Answers = {"3", "4", "3.0", "4.0"}, CorrectAnswer = 2 },
-    { Question = "What does Math.max(5, 10) return? (v6)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 2 },
-    { Question = "What does Math.min(5, 10) return? (v7)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.pow(2, 3) return? (v8)", Answers = {"6", "8", "9", "2"}, CorrectAnswer = 2 },
-    { Question = "What does Math.random() return? (v9)", Answers = {"A random integer", "A random float between 0 and 1", "A random float between 1 and 10", "A random float between -1 and 1"}, CorrectAnswer = 2 },
-    { Question = "What does Math.abs(-5) return? (v10)", Answers = {"-5", "5", "0", "Error"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.floor(3.9) return? (v1)", Answers = {"4.0", "3", "3.0", "4"}, CorrectAnswer = 3 },
+	{ Question = "Which method returns the absolute value of a number? (v2)", Answers = {"Math.abs()", "Math.floor()", "Math.signum()", "Math.round()"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sqrt(25) return? (v3)", Answers = {"4", "5", "6", "25"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.ceil(3.1) return? (v4)", Answers = {"3", "3.0", "4", "4.0"}, CorrectAnswer = 3 },
+	{ Question = "What does Math.round(3.5) return? (v5)", Answers = {"3", "4", "3.0", "4.0"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.max(5, 10) return? (v6)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.min(5, 10) return? (v7)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.pow(2, 3) return? (v8)", Answers = {"6", "8", "9", "2"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.random() return? (v9)", Answers = {"A random integer", "A random float between 0 and 1", "A random float between 1 and 10", "A random float between -1 and 1"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.abs(-5) return? (v10)", Answers = {"-5", "5", "0", "Error"}, CorrectAnswer = 2 },
 
-    { Question = "What is the range of values returned by Math.random()? (v11)", Answers = {"0 inclusive to 1 exclusive", "0 to 1 inclusive", "-1 to 1", "1 to 10"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sign(-10) return? (v12)", Answers = {"-1", "1", "0", "Undefined"}, CorrectAnswer = 1 },
-    { Question = "What is Math.E in Java? (v13)", Answers = {"The base of natural logarithms", "Euler's number", "The value 2.718...", "All of the above"}, CorrectAnswer = 4 },
-    { Question = "What does Math.log(1) return? (v14)", Answers = {"0", "1", "Infinity", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.cos(0) return? (v15)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
-    { Question = "What is the output of Math.toDegrees(Math.PI)? (v16)", Answers = {"90", "180", "360", "0"}, CorrectAnswer = 2 },
-    { Question = "Which function rounds to the nearest integer? (v17)", Answers = {"Math.round()", "Math.floor()", "Math.ceil()", "Math.abs()"}, CorrectAnswer = 1 },
-    { Question = "Math.pow(4, 0.5) returns? (v18)", Answers = {"2", "4", "0.5", "16"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sin(Math.PI / 2) return? (v19)", Answers = {"0", "1", "-1", "0.5"}, CorrectAnswer = 2 },
-    { Question = "What is the value of Math.PI? (v20)", Answers = {"3.14159", "2.718", "1.414", "0"}, CorrectAnswer = 1 },
+	{ Question = "What is the range of values returned by Math.random()? (v11)", Answers = {"0 inclusive to 1 exclusive", "0 to 1 inclusive", "-1 to 1", "1 to 10"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sign(-10) return? (v12)", Answers = {"-1", "1", "0", "Undefined"}, CorrectAnswer = 1 },
+	{ Question = "What is Math.E in Java? (v13)", Answers = {"The base of natural logarithms", "Euler's number", "The value 2.718...", "All of the above"}, CorrectAnswer = 4 },
+	{ Question = "What does Math.log(1) return? (v14)", Answers = {"0", "1", "Infinity", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.cos(0) return? (v15)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
+	{ Question = "What is the output of Math.toDegrees(Math.PI)? (v16)", Answers = {"90", "180", "360", "0"}, CorrectAnswer = 2 },
+	{ Question = "Which function rounds to the nearest integer? (v17)", Answers = {"Math.round()", "Math.floor()", "Math.ceil()", "Math.abs()"}, CorrectAnswer = 1 },
+	{ Question = "Math.pow(4, 0.5) returns? (v18)", Answers = {"2", "4", "0.5", "16"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sin(Math.PI / 2) return? (v19)", Answers = {"0", "1", "-1", "0.5"}, CorrectAnswer = 2 },
+	{ Question = "What is the value of Math.PI? (v20)", Answers = {"3.14159", "2.718", "1.414", "0"}, CorrectAnswer = 1 },
 
-    { Question = "What does Math.expm1(1) compute? (v21)", Answers = {"e^1 - 1", "log(1)", "1 - e", "None of the above"}, CorrectAnswer = 1 },
-    { Question = "What does Math.cbrt(27) return? (v22)", Answers = {"3", "9", "27", "None"}, CorrectAnswer = 1 },
-    { Question = "Difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v23)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
-    { Question = "Which function converts radians to degrees? (v24)", Answers = {"No direct method", "toDegrees()", "fromRadians()", "degreeConvert()"}, CorrectAnswer = 1 },
-    { Question = "What is returned by Math.min() with no arguments? (v25)", Answers = {"Infinity", "-Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
-    { Question = "What is returned by Math.max() with no arguments? (v26)", Answers = {"-Infinity", "Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log10(100) return? (v27)", Answers = {"2", "3", "10", "100"}, CorrectAnswer = 2 },
-    { Question = "What is Math.hypot(3, 4)? (v28)", Answers = {"5", "7", "1", "12"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sign(0) return? (v29)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sign(-0) return? (v30)", Answers = {"-0", "0", "1", "-1"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.expm1(1) compute? (v21)", Answers = {"e^1 - 1", "log(1)", "1 - e", "None of the above"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.cbrt(27) return? (v22)", Answers = {"3", "9", "27", "None"}, CorrectAnswer = 1 },
+	{ Question = "Difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v23)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
+	{ Question = "Which function converts radians to degrees? (v24)", Answers = {"No direct method", "toDegrees()", "fromRadians()", "degreeConvert()"}, CorrectAnswer = 1 },
+	{ Question = "What is returned by Math.min() with no arguments? (v25)", Answers = {"Infinity", "-Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
+	{ Question = "What is returned by Math.max() with no arguments? (v26)", Answers = {"-Infinity", "Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log10(100) return? (v27)", Answers = {"2", "3", "10", "100"}, CorrectAnswer = 2 },
+	{ Question = "What is Math.hypot(3, 4)? (v28)", Answers = {"5", "7", "1", "12"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sign(0) return? (v29)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sign(-0) return? (v30)", Answers = {"-0", "0", "1", "-1"}, CorrectAnswer = 1 },
 
-    { Question = "What does Math.log1p(0) return? (v31)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "Expression Math.floor(Math.random() * 10) generates? (v32)", Answers = {"Random integer 0-9", "Random integer 1-10", "Random float 0-10", "Random float 0-9"}, CorrectAnswer = 1 },
-    { Question = "What does Math.asin(1) return? (v33)", Answers = {"π/2", "π", "0", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.acos(1) return? (v34)", Answers = {"0", "π/2", "π", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What is the output of Math.round(2.49)? (v35)", Answers = {"2", "3", "2.49", "Error"}, CorrectAnswer = 1 },
-    { Question = "What is the output of Math.round(-2.5)? (v36)", Answers = {"-2", "-3", "-2.5", "Error"}, CorrectAnswer = 2 },
-    { Question = "What does Math.trunc(3.5) return? (v37)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.trunc(-3.5) return? (v38)", Answers = {"-3", "-4", "-3.5", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.imul(2, 4) return? (v39)", Answers = {"8", "6", "16", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.clz32(1) return? (v40)", Answers = {"31", "0", "1", "32"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log1p(0) return? (v31)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "Expression Math.floor(Math.random() * 10) generates? (v32)", Answers = {"Random integer 0-9", "Random integer 1-10", "Random float 0-10", "Random float 0-9"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.asin(1) return? (v33)", Answers = {"π/2", "π", "0", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.acos(1) return? (v34)", Answers = {"0", "π/2", "π", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.round(2.49)? (v35)", Answers = {"2", "3", "2.49", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.round(-2.5)? (v36)", Answers = {"-2", "-3", "-2.5", "Error"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.trunc(3.5) return? (v37)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.trunc(-3.5) return? (v38)", Answers = {"-3", "-4", "-3.5", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.imul(2, 4) return? (v39)", Answers = {"8", "6", "16", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.clz32(1) return? (v40)", Answers = {"31", "0", "1", "32"}, CorrectAnswer = 1 },
 
-    { Question = "What does Math.fround(1.5) return? (v41)", Answers = {"1.5", "1", "2", "Error"}, CorrectAnswer = 1 },
-    { Question = "What value does Math.EPSILON represent? (v42)", Answers = {"Smallest difference between two floats", "Eulers number", "Pi approximation", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log2(8) return? (v43)", Answers = {"3", "8", "2", "1"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sinh(0) return? (v44)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.cosh(0) return? (v45)", Answers = {"1", "0", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.tanh(0) return? (v46)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "Which method rounds towards zero? (v47)", Answers = {"trunc()", "floor()", "ceil()", "round()"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sinh(1) approximate? (v48)", Answers = {"1.175", "0.5", "2", "5"}, CorrectAnswer = 1 },
-    { Question = "What does Math.cosh(1) approximate? (v49)", Answers = {"1.543", "2.0", "0.5", "0"}, CorrectAnswer = 1 },
-    { Question = "What is Math.tanh(1) approximately? (v50)", Answers = {"0.761", "1", "0", "2"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.fround(1.5) return? (v41)", Answers = {"1.5", "1", "2", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What value does Math.EPSILON represent? (v42)", Answers = {"Smallest difference between two floats", "Eulers number", "Pi approximation", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log2(8) return? (v43)", Answers = {"3", "8", "2", "1"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sinh(0) return? (v44)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.cosh(0) return? (v45)", Answers = {"1", "0", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.tanh(0) return? (v46)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "Which method rounds towards zero? (v47)", Answers = {"trunc()", "floor()", "ceil()", "round()"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sinh(1) approximate? (v48)", Answers = {"1.175", "0.5", "2", "5"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.cosh(1) approximate? (v49)", Answers = {"1.543", "2.0", "0.5", "0"}, CorrectAnswer = 1 },
+	{ Question = "What is Math.tanh(1) approximately? (v50)", Answers = {"0.761", "1", "0", "2"}, CorrectAnswer = 1 },
 
-    { Question = "What is the default return type of Math operations? (v51)", Answers = {"Number", "String", "Boolean", "Object"}, CorrectAnswer = 1 },
-    { Question = "What does Math.max() with no arguments return? (v52)", Answers = {"-Infinity", "Infinity", "0", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.min() with no arguments return? (v53)", Answers = {"Infinity", "-Infinity", "0", "Error"}, CorrectAnswer = 1 },
-    { Question = "What is Math.clz32(16)? (v54)", Answers = {"27", "28", "16", "31"}, CorrectAnswer = 1 },
-    { Question = "What does Math.fround(1.337) return? (v55)", Answers = {"1.337", "1.33", "1.34", "Error"}, CorrectAnswer = 1 },
-    { Question = "Which function returns the nearest integer? (v56)", Answers = {"round()", "floor()", "ceil()", "trunc()"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log2(1) return? (v57)", Answers = {"0", "1", "undefined", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log10(1000) return? (v58)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
-    { Question = "What is the value of Math.sqrt(0)? (v59)", Answers = {"0", "NaN", "1", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.random() * 100 generate? (v60)", Answers = {"A random float between 0 and 100", "A random integer between 0 and 100", "Always 100", "Always 0"}, CorrectAnswer = 1 },
+	{ Question = "What is the default return type of Math operations? (v51)", Answers = {"Number", "String", "Boolean", "Object"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.max() with no arguments return? (v52)", Answers = {"-Infinity", "Infinity", "0", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.min() with no arguments return? (v53)", Answers = {"Infinity", "-Infinity", "0", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is Math.clz32(16)? (v54)", Answers = {"27", "28", "16", "31"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.fround(1.337) return? (v55)", Answers = {"1.337", "1.33", "1.34", "Error"}, CorrectAnswer = 1 },
+	{ Question = "Which function returns the nearest integer? (v56)", Answers = {"round()", "floor()", "ceil()", "trunc()"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log2(1) return? (v57)", Answers = {"0", "1", "undefined", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log10(1000) return? (v58)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
+	{ Question = "What is the value of Math.sqrt(0)? (v59)", Answers = {"0", "NaN", "1", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.random() * 100 generate? (v60)", Answers = {"A random float between 0 and 100", "A random integer between 0 and 100", "Always 100", "Always 0"}, CorrectAnswer = 1 },
 
-    { Question = "What is Math.abs(Math.pow(-2, 3))? (v61)", Answers = {"8", "-8", "2", "-2"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sign(0) return? (v62)", Answers = {"0", "-0", "1", "-1"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sign(-10) return? (v63)", Answers = {"-1", "1", "0", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sqrt(9) return? (v64)", Answers = {"3", "9", "81", "1"}, CorrectAnswer = 1 },
-    { Question = "What does Math.pow(3, 2) return? (v65)", Answers = {"9", "6", "3", "8"}, CorrectAnswer = 1 },
-    { Question = "Which function returns positive infinity? (v66)", Answers = {"Infinity", "-Infinity", "NaN", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.E represent? (v67)", Answers = {"Euler's number", "Pi", "Natural log", "0"}, CorrectAnswer = 1 },
-    { Question = "What is the difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v68)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
-    { Question = "What is the output of Math.round(4.5)? (v69)", Answers = {"5", "4", "4.5", "Error"}, CorrectAnswer = 1 },
-    { Question = "What is the output of Math.round(-1.1)? (v70)", Answers = {"-1", "-2", "1", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is Math.abs(Math.pow(-2, 3))? (v61)", Answers = {"8", "-8", "2", "-2"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sign(0) return? (v62)", Answers = {"0", "-0", "1", "-1"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sign(-10) return? (v63)", Answers = {"-1", "1", "0", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sqrt(9) return? (v64)", Answers = {"3", "9", "81", "1"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.pow(3, 2) return? (v65)", Answers = {"9", "6", "3", "8"}, CorrectAnswer = 1 },
+	{ Question = "Which function returns positive infinity? (v66)", Answers = {"Infinity", "-Infinity", "NaN", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.E represent? (v67)", Answers = {"Euler's number", "Pi", "Natural log", "0"}, CorrectAnswer = 1 },
+	{ Question = "What is the difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v68)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.round(4.5)? (v69)", Answers = {"5", "4", "4.5", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.round(-1.1)? (v70)", Answers = {"-1", "-2", "1", "Error"}, CorrectAnswer = 1 },
 
-    { Question = "What is the output of Math.floor(-2.3)? (v71)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
-    { Question = "What does Math.ceil(-2.3) return? (v72)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
-    { Question = "What does Math.abs(-0) return? (v73)", Answers = {"0", "-0", "NaN", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log(Math.E) return? (v74)", Answers = {"1", "0", "E", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.atan(1) return? (v75)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.atan2(1, 1) return? (v76)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
-    { Question = "What is the output of Math.log(10) approximately? (v77)", Answers = {"2.302", "1", "10", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sqrt(16) return? (v78)", Answers = {"4", "16", "2", "8"}, CorrectAnswer = 1 },
-    { Question = "What does Math.pow(2, 10) return? (v79)", Answers = {"1024", "512", "256", "128"}, CorrectAnswer = 1 },
-    { Question = "What does Math.random() * 50 generate? (v80)", Answers = {"A random float between 0 and 50", "A random integer between 0 and 50", "Always 50", "Always 0"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.floor(-2.3)? (v71)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.ceil(-2.3) return? (v72)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.abs(-0) return? (v73)", Answers = {"0", "-0", "NaN", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log(Math.E) return? (v74)", Answers = {"1", "0", "E", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.atan(1) return? (v75)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.atan2(1, 1) return? (v76)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.log(10) approximately? (v77)", Answers = {"2.302", "1", "10", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sqrt(16) return? (v78)", Answers = {"4", "16", "2", "8"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.pow(2, 10) return? (v79)", Answers = {"1024", "512", "256", "128"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.random() * 50 generate? (v80)", Answers = {"A random float between 0 and 50", "A random integer between 0 and 50", "Always 50", "Always 0"}, CorrectAnswer = 1 },
 
-    { Question = "What is the output of Math.floor(5.9)? (v81)", Answers = {"5", "6", "5.9", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.ceil(5.1) return? (v82)", Answers = {"5", "6", "5.1", "Error"}, CorrectAnswer = 2 },
-    { Question = "What does Math.abs(-10) return? (v83)", Answers = {"10", "-10", "0", "Error"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log(0) return? (v84)", Answers = {"-Infinity", "Infinity", "0", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.sin(π/2) return? (v85)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
-    { Question = "What does Math.cos(π) return? (v86)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 3 },
-    { Question = "What does Math.tan(0) return? (v87)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log1p(1) return? (v88)", Answers = {"0.693", "1", "2", "NaN"}, CorrectAnswer = 1 },
-    { Question = "What does Math.hypot(6, 8) return? (v89)", Answers = {"10", "14", "8", "6"}, CorrectAnswer = 1 },
-    { Question = "What does Math.expm1(0) return? (v90)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of Math.floor(5.9)? (v81)", Answers = {"5", "6", "5.9", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.ceil(5.1) return? (v82)", Answers = {"5", "6", "5.1", "Error"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.abs(-10) return? (v83)", Answers = {"10", "-10", "0", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log(0) return? (v84)", Answers = {"-Infinity", "Infinity", "0", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.sin(π/2) return? (v85)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
+	{ Question = "What does Math.cos(π) return? (v86)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 3 },
+	{ Question = "What does Math.tan(0) return? (v87)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log1p(1) return? (v88)", Answers = {"0.693", "1", "2", "NaN"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.hypot(6, 8) return? (v89)", Answers = {"10", "14", "8", "6"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.expm1(0) return? (v90)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
 
-    { Question = "What does Math.cbrt(-8) return? (v91)", Answers = {"-2", "2", "8", "0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log2(16) return? (v92)", Answers = {"4", "2", "8", "1"}, CorrectAnswer = 1 },
-    { Question = "What does Math.log10(1000) return? (v93)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
-    { Question = "What does Math.floor(Math.random() * 100) return? (v94)", Answers = {"An integer between 0 and 99", "An integer between 1 and 100", "A float between 0 and 100", "Always 0"}, CorrectAnswer = 1 },
-    { Question = "What does Math.ceil(3.5) return? (v95)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 2}
+	{ Question = "What does Math.cbrt(-8) return? (v91)", Answers = {"-2", "2", "8", "0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log2(16) return? (v92)", Answers = {"4", "2", "8", "1"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.log10(1000) return? (v93)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.floor(Math.random() * 100) return? (v94)", Answers = {"An integer between 0 and 99", "An integer between 1 and 100", "A float between 0 and 100", "Always 0"}, CorrectAnswer = 1 },
+	{ Question = "What does Math.ceil(3.5) return? (v95)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 2}
 }
 
 QuestionBank.Object = {
-    { Question = "Which method returns a hash code for an object? (v1)", Answers = {"toString()", "equals()", "hashCode()", "getHash()"}, CorrectAnswer = 3 },
-    { Question = "Which method provides a string representation of an object? (v2)", Answers = {"show()", "print()", "toString()", "describe()"}, CorrectAnswer = 3 },
-    { Question = "What is the purpose of the equals() method in Java? (v3)", Answers = {"To compare object references", "To assign objects", "To compare object values", "To destroy objects"}, CorrectAnswer = 3 },
-    { Question = "Which method checks if two objects are equal? (v4)", Answers = {"equals()", "compare()", "isEqual()", "match()"}, CorrectAnswer = 1 },
-    { Question = "What does the clone() method do? (v5)", Answers = {"Creates a new object", "Copies the object", "Returns a reference", "None of the above"}, CorrectAnswer = 2 },
-    { Question = "What is the return type of the toString() method? (v6)", Answers = {"String", "Object", "int", "void"}, CorrectAnswer = 1 },
-    { Question = "What is the purpose of the finalize() method? (v7)", Answers = {"To clean up resources", "To compare objects", "To create objects", "To destroy objects"}, CorrectAnswer = 1 },
-    { Question = "Which method is used to compare two strings? (v8)", Answers = {"compare()", "equals()", "isEqual()", "match()"}, CorrectAnswer = 2 },
-    { Question = "What does the getClass() method return? (v9)", Answers = {"Class object", "String", "int", "void"}, CorrectAnswer = 1 },
-    { Question = "What is the purpose of the hashCode() method? (v10)", Answers = {"To return a unique identifier", "To compare objects", "To create a string", "To clone an object"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns a hash code for an object? (v1)", Answers = {"toString()", "equals()", "hashCode()", "getHash()"}, CorrectAnswer = 3 },
+	{ Question = "Which method provides a string representation of an object? (v2)", Answers = {"show()", "print()", "toString()", "describe()"}, CorrectAnswer = 3 },
+	{ Question = "What is the purpose of the equals() method in Java? (v3)", Answers = {"To compare object references", "To assign objects", "To compare object values", "To destroy objects"}, CorrectAnswer = 3 },
+	{ Question = "Which method checks if two objects are equal? (v4)", Answers = {"equals()", "compare()", "isEqual()", "match()"}, CorrectAnswer = 1 },
+	{ Question = "What does the clone() method do? (v5)", Answers = {"Creates a new object", "Copies the object", "Returns a reference", "None of the above"}, CorrectAnswer = 2 },
+	{ Question = "What is the return type of the toString() method? (v6)", Answers = {"String", "Object", "int", "void"}, CorrectAnswer = 1 },
+	{ Question = "What is the purpose of the finalize() method? (v7)", Answers = {"To clean up resources", "To compare objects", "To create objects", "To destroy objects"}, CorrectAnswer = 1 },
+	{ Question = "Which method is used to compare two strings? (v8)", Answers = {"compare()", "equals()", "isEqual()", "match()"}, CorrectAnswer = 2 },
+	{ Question = "What does the getClass() method return? (v9)", Answers = {"Class object", "String", "int", "void"}, CorrectAnswer = 1 },
+	{ Question = "What is the purpose of the hashCode() method? (v10)", Answers = {"To return a unique identifier", "To compare objects", "To create a string", "To clone an object"}, CorrectAnswer = 1 },
 
-    { Question = "What does Object.clone() require? (v11)", Answers = {"Implements Cloneable", "Implements Serializable", "Overriding toString", "Overriding equals"}, CorrectAnswer = 1 },
-    { Question = "What happens if equals() is not overridden? (v12)", Answers = {"Compares references", "Compares object contents", "Throws exception", "Returns false always"}, CorrectAnswer = 1 },
-    { Question = "What package contains Object class? (v13)", Answers = {"java.lang", "java.util", "java.io", "java.net"}, CorrectAnswer = 1 },
-    { Question = "Can every class override finalize()? (v14)", Answers = {"Yes", "No", "Only abstract classes", "Only interfaces"}, CorrectAnswer = 1 },
-    { Question = "What does toString() default return? (v15)", Answers = {"ClassName@Hashcode", "Object contents", "Null", "ClassName"}, CorrectAnswer = 1 },
-    { Question = "Is hashCode() consistent with equals()? (v16)", Answers = {"It must be", "It doesn’t have to be", "Always inconsistent", "Undefined"}, CorrectAnswer = 1 },
-    { Question = "Which method compares objects for identity? (v17)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
-    { Question = "Does Object class implement Serializable? (v18)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
-    { Question = "What is class Object’s superclass? (v19)", Answers = {"None", "Class", "java.lang.Object", "Object is root"}, CorrectAnswer = 4 },
-    { Question = "Is Object’s clone() method public? (v20)", Answers = {"Protected", "Public", "Private", "Default"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.clone() require? (v11)", Answers = {"Implements Cloneable", "Implements Serializable", "Overriding toString", "Overriding equals"}, CorrectAnswer = 1 },
+	{ Question = "What happens if equals() is not overridden? (v12)", Answers = {"Compares references", "Compares object contents", "Throws exception", "Returns false always"}, CorrectAnswer = 1 },
+	{ Question = "What package contains Object class? (v13)", Answers = {"java.lang", "java.util", "java.io", "java.net"}, CorrectAnswer = 1 },
+	{ Question = "Can every class override finalize()? (v14)", Answers = {"Yes", "No", "Only abstract classes", "Only interfaces"}, CorrectAnswer = 1 },
+	{ Question = "What does toString() default return? (v15)", Answers = {"ClassName@Hashcode", "Object contents", "Null", "ClassName"}, CorrectAnswer = 1 },
+	{ Question = "Is hashCode() consistent with equals()? (v16)", Answers = {"It must be", "It doesn’t have to be", "Always inconsistent", "Undefined"}, CorrectAnswer = 1 },
+	{ Question = "Which method compares objects for identity? (v17)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
+	{ Question = "Does Object class implement Serializable? (v18)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+	{ Question = "What is class Object’s superclass? (v19)", Answers = {"None", "Class", "java.lang.Object", "Object is root"}, CorrectAnswer = 4 },
+	{ Question = "Is Object’s clone() method public? (v20)", Answers = {"Protected", "Public", "Private", "Default"}, CorrectAnswer = 1 },
 
-    { Question = "What exception does clone() throw if not supported? (v21)", Answers = {"CloneNotSupportedException", "ClassCastException", "NullPointerException", "IOException"}, CorrectAnswer = 1 },
-    { Question = "Is finalize() called for all objects? (v22)", Answers = {"Not guaranteed", "Always", "Never", "Only for garbage collected objects"}, CorrectAnswer = 1 },
-    { Question = "Can equals() method be called with null? (v23)", Answers = {"Yes", "No", "Throws error", "Depends on JVM"}, CorrectAnswer = 1 },
-    { Question = "What is the equals() contract? (v24)", Answers = {"Reflexive, symmetric, transitive, consistent", "Only symmetric", "No contract", "Random"}, CorrectAnswer = 1 },
-    { Question = "What does Object.wait() do? (v25)", Answers = {"Waits for notify()", "Pauses execution", "Stops thread", "Does nothing"}, CorrectAnswer = 1 },
-    { Question = "What does Object.notify() do? (v26)", Answers = {"Wakes one waiting thread", "Pauses thread", "Terminates thread", "Wakes all threads"}, CorrectAnswer = 1 },
-    { Question = "How to create a new Object instance? (v27)", Answers = {"new Object()", "Object()", "create Object()", "None of these"}, CorrectAnswer = 1 },
-    { Question = "Does Object have a default constructor? (v28)", Answers = {"Yes", "No", "Only for subclasses", "Depends on JVM"}, CorrectAnswer = 1 },
-    { Question = "What is the runtime class of an object? (v29)", Answers = {"Class returned by getClass()", "String representation", "Superclass", "null"}, CorrectAnswer = 1 },
-    { Question = "What is the default behavior of Object.equals()? (v30)", Answers = {"Reference equality", "Value equality", "Throws error", "Always false"}, CorrectAnswer = 1 },
+	{ Question = "What exception does clone() throw if not supported? (v21)", Answers = {"CloneNotSupportedException", "ClassCastException", "NullPointerException", "IOException"}, CorrectAnswer = 1 },
+	{ Question = "Is finalize() called for all objects? (v22)", Answers = {"Not guaranteed", "Always", "Never", "Only for garbage collected objects"}, CorrectAnswer = 1 },
+	{ Question = "Can equals() method be called with null? (v23)", Answers = {"Yes", "No", "Throws error", "Depends on JVM"}, CorrectAnswer = 1 },
+	{ Question = "What is the equals() contract? (v24)", Answers = {"Reflexive, symmetric, transitive, consistent", "Only symmetric", "No contract", "Random"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.wait() do? (v25)", Answers = {"Waits for notify()", "Pauses execution", "Stops thread", "Does nothing"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.notify() do? (v26)", Answers = {"Wakes one waiting thread", "Pauses thread", "Terminates thread", "Wakes all threads"}, CorrectAnswer = 1 },
+	{ Question = "How to create a new Object instance? (v27)", Answers = {"new Object()", "Object()", "create Object()", "None of these"}, CorrectAnswer = 1 },
+	{ Question = "Does Object have a default constructor? (v28)", Answers = {"Yes", "No", "Only for subclasses", "Depends on JVM"}, CorrectAnswer = 1 },
+	{ Question = "What is the runtime class of an object? (v29)", Answers = {"Class returned by getClass()", "String representation", "Superclass", "null"}, CorrectAnswer = 1 },
+	{ Question = "What is the default behavior of Object.equals()? (v30)", Answers = {"Reference equality", "Value equality", "Throws error", "Always false"}, CorrectAnswer = 1 },
 
-    { Question = "Which method provides class metadata? (v31)", Answers = {"getClass()", "getMeta()", "classInfo()", "classDetails()"}, CorrectAnswer = 1 },
-    { Question = "Can Object.toString() be overridden? (v32)", Answers = {"Yes", "No", "Only in subclasses", "Only with annotations"}, CorrectAnswer = 1 },
-    { Question = "Is Object.hashCode() overridden for custom classes? (v33)", Answers = {"Should be", "No", "Never", "Optional"}, CorrectAnswer = 1 },
-    { Question = "What does Object.finalize() throw? (v34)", Answers = {"Throwable", "Exception", "Error", "Nothing"}, CorrectAnswer = 1 },
-    { Question = "What does an Object reference point to? (v35)", Answers = {"Object in memory", "Class definition", "Function", "Null"}, CorrectAnswer = 1 },
-    { Question = "What is the role of java.lang.Object? (v36)", Answers = {"Root class of all classes", "Utility class", "Helper class", "Interface"}, CorrectAnswer = 1 },
-    { Question = "Which methods are final in Object? (v37)", Answers = {"wait(), notify(), notifyAll()", "equals(), hashCode()", "toString(), clone()", "None"}, CorrectAnswer = 1 },
-    { Question = "What synchronization does Object.wait() require? (v38)", Answers = {"Monitor lock", "No synchronization", "Static lock", "Class lock"}, CorrectAnswer = 1 },
-    { Question = "Is Object serializable by default? (v39)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
-    { Question = "How to check if an object is an instance of a class? (v40)", Answers = {"instanceof operator", "is()", "check()", "instanceOf()"}, CorrectAnswer = 1 },
+	{ Question = "Which method provides class metadata? (v31)", Answers = {"getClass()", "getMeta()", "classInfo()", "classDetails()"}, CorrectAnswer = 1 },
+	{ Question = "Can Object.toString() be overridden? (v32)", Answers = {"Yes", "No", "Only in subclasses", "Only with annotations"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.hashCode() overridden for custom classes? (v33)", Answers = {"Should be", "No", "Never", "Optional"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.finalize() throw? (v34)", Answers = {"Throwable", "Exception", "Error", "Nothing"}, CorrectAnswer = 1 },
+	{ Question = "What does an Object reference point to? (v35)", Answers = {"Object in memory", "Class definition", "Function", "Null"}, CorrectAnswer = 1 },
+	{ Question = "What is the role of java.lang.Object? (v36)", Answers = {"Root class of all classes", "Utility class", "Helper class", "Interface"}, CorrectAnswer = 1 },
+	{ Question = "Which methods are final in Object? (v37)", Answers = {"wait(), notify(), notifyAll()", "equals(), hashCode()", "toString(), clone()", "None"}, CorrectAnswer = 1 },
+	{ Question = "What synchronization does Object.wait() require? (v38)", Answers = {"Monitor lock", "No synchronization", "Static lock", "Class lock"}, CorrectAnswer = 1 },
+	{ Question = "Is Object serializable by default? (v39)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+	{ Question = "How to check if an object is an instance of a class? (v40)", Answers = {"instanceof operator", "is()", "check()", "instanceOf()"}, CorrectAnswer = 1 },
 
-    { Question = "What is the difference between == and equals()? (v41)", Answers = {"== compares references, equals compares contents", "Both compare contents", "Both compare references", "No difference"}, CorrectAnswer = 1 },
-    { Question = "What happens if you override equals() but not hashCode()? (v42)", Answers = {"Contract is broken, may cause hashing errors", "No problem", "Errors at runtime", "Compilation error"}, CorrectAnswer = 1 },
-    { Question = "What does Object.clone() produce? (v43)", Answers = {"Shallow copy by default", "Deep copy", "Reference copy", "Does not work"}, CorrectAnswer = 1 },
-    { Question = "Which method should be overridden together with equals()? (v44)", Answers = {"hashCode()", "toString()", "clone()", "finalize()"}, CorrectAnswer = 1 },
-    { Question = "What is the output of default toString() method? (v45)", Answers = {"ClassName@HexHashcode", "Object contents", "null", "ClassName"}, CorrectAnswer = 1 },
-    { Question = "Can finalize() be used to release resources? (v46)", Answers = {"Yes, but not recommended", "No", "Always", "Never"}, CorrectAnswer = 1 },
-    { Question = "Does every object have a monitor? (v47)", Answers = {"Yes for synchronization", "No", "Only threads", "Only locks"}, CorrectAnswer = 1 },
-    { Question = "What does Object.notifyAll() do? (v48)", Answers = {"Wakes all waiting threads", "Wakes one thread", "Pauses all threads", "Terminates threads"}, CorrectAnswer = 1 },
-    { Question = "What interface must a class implement to be cloneable? (v49)", Answers = {"Cloneable", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
-    { Question = "Is Object class itself cloneable? (v50)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+	{ Question = "What is the difference between == and equals()? (v41)", Answers = {"== compares references, equals compares contents", "Both compare contents", "Both compare references", "No difference"}, CorrectAnswer = 1 },
+	{ Question = "What happens if you override equals() but not hashCode()? (v42)", Answers = {"Contract is broken, may cause hashing errors", "No problem", "Errors at runtime", "Compilation error"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.clone() produce? (v43)", Answers = {"Shallow copy by default", "Deep copy", "Reference copy", "Does not work"}, CorrectAnswer = 1 },
+	{ Question = "Which method should be overridden together with equals()? (v44)", Answers = {"hashCode()", "toString()", "clone()", "finalize()"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of default toString() method? (v45)", Answers = {"ClassName@HexHashcode", "Object contents", "null", "ClassName"}, CorrectAnswer = 1 },
+	{ Question = "Can finalize() be used to release resources? (v46)", Answers = {"Yes, but not recommended", "No", "Always", "Never"}, CorrectAnswer = 1 },
+	{ Question = "Does every object have a monitor? (v47)", Answers = {"Yes for synchronization", "No", "Only threads", "Only locks"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.notifyAll() do? (v48)", Answers = {"Wakes all waiting threads", "Wakes one thread", "Pauses all threads", "Terminates threads"}, CorrectAnswer = 1 },
+	{ Question = "What interface must a class implement to be cloneable? (v49)", Answers = {"Cloneable", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
+	{ Question = "Is Object class itself cloneable? (v50)", Answers = {"No", "Yes", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
 
-    { Question = "What exceptions can finalize() throw? (v51)", Answers = {"Nothing, should not throw exceptions", "Any exception", "IOException", "RuntimeException"}, CorrectAnswer = 1 },
-    { Question = "When is finalize() called? (v52)", Answers = {"Before garbage collection", "After garbage collection", "After object creation", "Never"}, CorrectAnswer = 1 },
-    { Question = "How are exceptions handled in equals()? (v53)", Answers = {"Should handle null gracefully", "Throws exception", "Returns false only", "Always true"}, CorrectAnswer = 1 },
-    { Question = "Is Object.equals() final? (v54)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only in subclasses"}, CorrectAnswer = 1 },
-    { Question = "Are primitive types subclasses of Object? (v55)", Answers = {"No", "Yes", "Only boxed types", "Sometimes"}, CorrectAnswer = 1 },
-    { Question = "Can Object have abstract methods? (v56)", Answers = {"No, it's a concrete class", "Yes", "Only interfaces", "Only abstract classes"}, CorrectAnswer = 1 },
-    { Question = "Which method returns the class loader of an object? (v57)", Answers = {"getClass().getClassLoader()", "getClassLoader()", "loader()", "classLoader()"}, CorrectAnswer = 1 },
-    { Question = "What is the output type of Object.toString()? (v58)", Answers = {"String", "Object", "Integer", "void"}, CorrectAnswer = 1 },
-    { Question = "Can an object be cast to Object? (v59)", Answers = {"Yes", "No", "Only subclasses", "Only interfaces"}, CorrectAnswer = 1 },
-    { Question = "What is the default size of Object in memory? (v60)", Answers = {"Depends on JVM", "16 bytes", "8 bytes", "4 bytes"}, CorrectAnswer = 1 },
+	{ Question = "What exceptions can finalize() throw? (v51)", Answers = {"Nothing, should not throw exceptions", "Any exception", "IOException", "RuntimeException"}, CorrectAnswer = 1 },
+	{ Question = "When is finalize() called? (v52)", Answers = {"Before garbage collection", "After garbage collection", "After object creation", "Never"}, CorrectAnswer = 1 },
+	{ Question = "How are exceptions handled in equals()? (v53)", Answers = {"Should handle null gracefully", "Throws exception", "Returns false only", "Always true"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.equals() final? (v54)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only in subclasses"}, CorrectAnswer = 1 },
+	{ Question = "Are primitive types subclasses of Object? (v55)", Answers = {"No", "Yes", "Only boxed types", "Sometimes"}, CorrectAnswer = 1 },
+	{ Question = "Can Object have abstract methods? (v56)", Answers = {"No, it's a concrete class", "Yes", "Only interfaces", "Only abstract classes"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns the class loader of an object? (v57)", Answers = {"getClass().getClassLoader()", "getClassLoader()", "loader()", "classLoader()"}, CorrectAnswer = 1 },
+	{ Question = "What is the output type of Object.toString()? (v58)", Answers = {"String", "Object", "Integer", "void"}, CorrectAnswer = 1 },
+	{ Question = "Can an object be cast to Object? (v59)", Answers = {"Yes", "No", "Only subclasses", "Only interfaces"}, CorrectAnswer = 1 },
+	{ Question = "What is the default size of Object in memory? (v60)", Answers = {"Depends on JVM", "16 bytes", "8 bytes", "4 bytes"}, CorrectAnswer = 1 },
 
-    { Question = "Is Object.hashCode() method final? (v61)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only for subclasses"}, CorrectAnswer = 1 },
-    { Question = "Which method compares object references? (v62)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
-    { Question = "What happens if clone() is not supported? (v63)", Answers = {"Throws CloneNotSupportedException", "Returns null", "Returns same reference", "Silent fail"}, CorrectAnswer = 1 },
-    { Question = "Is Object.toString() synchronized? (v64)", Answers = {"No", "Yes", "Only in subclasses", "Depends"}, CorrectAnswer = 1 },
-    { Question = "Which class is the superclass of all classes? (v65)", Answers = {"java.lang.Object", "java.lang.Class", "java.lang.String", "java.lang.System"}, CorrectAnswer = 1 },
-    { Question = "Can Object be instantiated? (v66)", Answers = {"Yes", "No, abstract", "Only via subclasses", "Only via reflection"}, CorrectAnswer = 1 },
-    { Question = "What method returns the superclass of an object’s class? (v67)", Answers = {"getClass().getSuperclass()", "getSuper()", "superclass()", "getParentClass()"}, CorrectAnswer = 1 },
-    { Question = "What does Object.getClass() return on an array? (v68)", Answers = {"Class object for array type", "String", "null", "Error"}, CorrectAnswer = 1 },
-    { Question = "What is the result of Object.hashCode() by default? (v69)", Answers = {"A unique integer based on memory address", "0", "-1", "Error"}, CorrectAnswer = 1 },
-    { Question = "Is Object.finalize() guaranteed to be called? (v70)", Answers = {"No, not guaranteed", "Yes", "Only if explicitly called", "Only in certain JVMs"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.hashCode() method final? (v61)", Answers = {"No, can be overridden", "Yes, cannot be overridden", "Depends on JVM", "Only for subclasses"}, CorrectAnswer = 1 },
+	{ Question = "Which method compares object references? (v62)", Answers = {"== operator", "equals()", "hashCode()", "toString()"}, CorrectAnswer = 1 },
+	{ Question = "What happens if clone() is not supported? (v63)", Answers = {"Throws CloneNotSupportedException", "Returns null", "Returns same reference", "Silent fail"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.toString() synchronized? (v64)", Answers = {"No", "Yes", "Only in subclasses", "Depends"}, CorrectAnswer = 1 },
+	{ Question = "Which class is the superclass of all classes? (v65)", Answers = {"java.lang.Object", "java.lang.Class", "java.lang.String", "java.lang.System"}, CorrectAnswer = 1 },
+	{ Question = "Can Object be instantiated? (v66)", Answers = {"Yes", "No, abstract", "Only via subclasses", "Only via reflection"}, CorrectAnswer = 1 },
+	{ Question = "What method returns the superclass of an object’s class? (v67)", Answers = {"getClass().getSuperclass()", "getSuper()", "superclass()", "getParentClass()"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.getClass() return on an array? (v68)", Answers = {"Class object for array type", "String", "null", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is the result of Object.hashCode() by default? (v69)", Answers = {"A unique integer based on memory address", "0", "-1", "Error"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.finalize() guaranteed to be called? (v70)", Answers = {"No, not guaranteed", "Yes", "Only if explicitly called", "Only in certain JVMs"}, CorrectAnswer = 1 },
 
-    { Question = "What is the typical use of Object.finalize()? (v71)", Answers = {"Cleanup before garbage collection", "Initializes object", "Clones object", "Deletes object"}, CorrectAnswer = 1 },
-    { Question = "Which standard class is the ultimate ancestor class? (v72)", Answers = {"Object", "Class", "String", "Serializable"}, CorrectAnswer = 1 },
-    { Question = "Can Object be cast to other class safely? (v73)", Answers = {"Only if instance of that class", "Always", "Never", "Only primitive types"}, CorrectAnswer = 1 },
-    { Question = "What does Object.getClass().getName() return? (v74)", Answers = {"Fully qualified class name", "Simple class name", "Empty string", "null"}, CorrectAnswer = 1 },
-    { Question = "What is the base method for all exceptions? (v75)", Answers = {"Throwable", "Exception", "Object", "Error"}, CorrectAnswer = 1 },
-    { Question = "Which method returns the identity hash code of an object? (v76)", Answers = {"System.identityHashCode(obj)", "obj.hashCode()", "obj.toString()", "obj.getHash()"}, CorrectAnswer = 1 },
-    { Question = "Is the hashCode() contract compatible with equals()? (v77)", Answers = {"Must be consistent", "No relation", "Opposite", "Random"}, CorrectAnswer = 1 },
-    { Question = "Which method to override for meaningful string representation? (v78)", Answers = {"toString()", "equals()", "hashCode()", "finalize()"}, CorrectAnswer = 1 },
-    { Question = "What’s the difference between shallow and deep copy? (v79)", Answers = {"Shallow copies references, deep copies objects", "Opposite", "No difference", "Shallow copies values only"}, CorrectAnswer = 1 },
-    { Question = "What interface should be implemented for deep cloning? (v80)", Answers = {"Cloneable (with custom implementation)", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
+	{ Question = "What is the typical use of Object.finalize()? (v71)", Answers = {"Cleanup before garbage collection", "Initializes object", "Clones object", "Deletes object"}, CorrectAnswer = 1 },
+	{ Question = "Which standard class is the ultimate ancestor class? (v72)", Answers = {"Object", "Class", "String", "Serializable"}, CorrectAnswer = 1 },
+	{ Question = "Can Object be cast to other class safely? (v73)", Answers = {"Only if instance of that class", "Always", "Never", "Only primitive types"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.getClass().getName() return? (v74)", Answers = {"Fully qualified class name", "Simple class name", "Empty string", "null"}, CorrectAnswer = 1 },
+	{ Question = "What is the base method for all exceptions? (v75)", Answers = {"Throwable", "Exception", "Object", "Error"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns the identity hash code of an object? (v76)", Answers = {"System.identityHashCode(obj)", "obj.hashCode()", "obj.toString()", "obj.getHash()"}, CorrectAnswer = 1 },
+	{ Question = "Is the hashCode() contract compatible with equals()? (v77)", Answers = {"Must be consistent", "No relation", "Opposite", "Random"}, CorrectAnswer = 1 },
+	{ Question = "Which method to override for meaningful string representation? (v78)", Answers = {"toString()", "equals()", "hashCode()", "finalize()"}, CorrectAnswer = 1 },
+	{ Question = "What’s the difference between shallow and deep copy? (v79)", Answers = {"Shallow copies references, deep copies objects", "Opposite", "No difference", "Shallow copies values only"}, CorrectAnswer = 1 },
+	{ Question = "What interface should be implemented for deep cloning? (v80)", Answers = {"Cloneable (with custom implementation)", "Serializable", "Comparable", "Iterable"}, CorrectAnswer = 1 },
 
-    { Question = "What does Object.wait(long millis) do? (v81)", Answers = {"Waits up to millis or until notified", "Waits forever", "Notifies threads", "Terminates thread"}, CorrectAnswer = 1 },
-    { Question = "Is Object.hashCode() thread-safe? (v82)", Answers = {"Yes", "No", "Sometimes", "Depends on JVM"}, CorrectAnswer = 1 },
-    { Question = "What is the effect of overriding equals() but not hashCode()? (v83)", Answers = {"Collection misbehavior", "Compile error", "Runtime exception", "No effect"}, CorrectAnswer = 1 },
-    { Question = "Does Object.equals() accept null as argument? (v84)", Answers = {"Yes, should return false", "No, throws exception", "Always true", "Undefined"}, CorrectAnswer = 1 },
-    { Question = "What does Object.notify() do? (v85)", Answers = {"Wakes one waiting thread", "Wakes all waiting threads", "Pauses execution", "Terminates thread"}, CorrectAnswer = 1 },
-    { Question = "Can finalize() resurrect an object? (v86)", Answers = {"Yes, but discouraged", "No", "Always", "Never"}, CorrectAnswer = 1 },
-    { Question = "When does finalize() run? (v87)", Answers = {"Before garbage collection", "After garbage collection", "On object creation", "On every method call"}, CorrectAnswer = 1 },
-    { Question = "What are typical uses of Object methods? (v88)", Answers = {"Representation, identity, equality, cloning", "Parsing", "IO operations", "Exception handling"}, CorrectAnswer = 1 },
-    { Question = "Is cloning deep by default in Object? (v89)", Answers = {"No, shallow cloning only", "Yes, always deep", "No, throws exception", "Depends on class"}, CorrectAnswer = 1 },
-    { Question = "What does Object.getClass().getSuperclass() return for Object? (v90)", Answers = {"null", "Object", "Class", "java.lang.Object"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.wait(long millis) do? (v81)", Answers = {"Waits up to millis or until notified", "Waits forever", "Notifies threads", "Terminates thread"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.hashCode() thread-safe? (v82)", Answers = {"Yes", "No", "Sometimes", "Depends on JVM"}, CorrectAnswer = 1 },
+	{ Question = "What is the effect of overriding equals() but not hashCode()? (v83)", Answers = {"Collection misbehavior", "Compile error", "Runtime exception", "No effect"}, CorrectAnswer = 1 },
+	{ Question = "Does Object.equals() accept null as argument? (v84)", Answers = {"Yes, should return false", "No, throws exception", "Always true", "Undefined"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.notify() do? (v85)", Answers = {"Wakes one waiting thread", "Wakes all waiting threads", "Pauses execution", "Terminates thread"}, CorrectAnswer = 1 },
+	{ Question = "Can finalize() resurrect an object? (v86)", Answers = {"Yes, but discouraged", "No", "Always", "Never"}, CorrectAnswer = 1 },
+	{ Question = "When does finalize() run? (v87)", Answers = {"Before garbage collection", "After garbage collection", "On object creation", "On every method call"}, CorrectAnswer = 1 },
+	{ Question = "What are typical uses of Object methods? (v88)", Answers = {"Representation, identity, equality, cloning", "Parsing", "IO operations", "Exception handling"}, CorrectAnswer = 1 },
+	{ Question = "Is cloning deep by default in Object? (v89)", Answers = {"No, shallow cloning only", "Yes, always deep", "No, throws exception", "Depends on class"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.getClass().getSuperclass() return for Object? (v90)", Answers = {"null", "Object", "Class", "java.lang.Object"}, CorrectAnswer = 1 },
 
-    { Question = "Is Object a final class? (v91)", Answers = {"No", "Yes", "Only in some runtimes", "Depends on JVM"}, CorrectAnswer = 1 },
-    { Question = "What is the result of calling Object.class? (v92)", Answers = {"Class object representing Object", "Error", "null", "Object instance"}, CorrectAnswer = 1 },
-    { Question = "What is the purpose of Object.getClass()? (v93)", Answers = {"Returns runtime class of object", "Returns class name string", "Returns superclass", "Returns hash code"}, CorrectAnswer = 1 },
-    { Question = "What happens if equals() is not reflexive? (v94)", Answers = {"Violates contract, unpredictable behavior", "Works fine", "Causes compile error", "Runtime exception"}, CorrectAnswer = 1 },
-    { Question = "Which method is used for synchronization on an Object? (v95)", Answers = {"synchronized block/method", "wait()", "notify()", "hashCode()"}, CorrectAnswer = 1 },
-    { Question = "Is Object.equals() null-safe? (v96)", Answers = {"Yes, returns false if other is null", "No, throws NPE", "Always true", "Undefined"}, CorrectAnswer = 1 },
-    { Question = "What does Object.wait() release when called? (v97)", Answers = {"Monitor lock", "Nothing", "System resources", "Memory"}, CorrectAnswer = 1 },
-    { Question = "What is the default return value of Object.hashCode() for two different objects? (v98)", Answers = {"Different hash codes", "Same hash code", "Zero", "Undefined"}, CorrectAnswer = 1 },
-    { Question = "Is Object.hashCode() method deterministic? (v99)", Answers = {"Yes, within one execution of JVM", "No", "Always zero", "Varies randomly"}, CorrectAnswer = 1 },
-    { Question = "When overriding equals and hashCode, what must be ensured? (v100)", Answers = {"Equal objects must have equal hash codes", "Hash codes must be unique", "Always false", "Always true"}, CorrectAnswer = 1 },
+	{ Question = "Is Object a final class? (v91)", Answers = {"No", "Yes", "Only in some runtimes", "Depends on JVM"}, CorrectAnswer = 1 },
+	{ Question = "What is the result of calling Object.class? (v92)", Answers = {"Class object representing Object", "Error", "null", "Object instance"}, CorrectAnswer = 1 },
+	{ Question = "What is the purpose of Object.getClass()? (v93)", Answers = {"Returns runtime class of object", "Returns class name string", "Returns superclass", "Returns hash code"}, CorrectAnswer = 1 },
+	{ Question = "What happens if equals() is not reflexive? (v94)", Answers = {"Violates contract, unpredictable behavior", "Works fine", "Causes compile error", "Runtime exception"}, CorrectAnswer = 1 },
+	{ Question = "Which method is used for synchronization on an Object? (v95)", Answers = {"synchronized block/method", "wait()", "notify()", "hashCode()"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.equals() null-safe? (v96)", Answers = {"Yes, returns false if other is null", "No, throws NPE", "Always true", "Undefined"}, CorrectAnswer = 1 },
+	{ Question = "What does Object.wait() release when called? (v97)", Answers = {"Monitor lock", "Nothing", "System resources", "Memory"}, CorrectAnswer = 1 },
+	{ Question = "What is the default return value of Object.hashCode() for two different objects? (v98)", Answers = {"Different hash codes", "Same hash code", "Zero", "Undefined"}, CorrectAnswer = 1 },
+	{ Question = "Is Object.hashCode() method deterministic? (v99)", Answers = {"Yes, within one execution of JVM", "No", "Always zero", "Varies randomly"}, CorrectAnswer = 1 },
+	{ Question = "When overriding equals and hashCode, what must be ensured? (v100)", Answers = {"Equal objects must have equal hash codes", "Hash codes must be unique", "Always false", "Always true"}, CorrectAnswer = 1 },
 }
 
 QuestionBank.String = {
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equalsIgnoreCase()", "compareTo()", "match()", "equals()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "5", "Error", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "he", "el", "lo"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "change()", "modify()", "replace()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"toUpperCase()", "capitalize()", "upper()", "makeUpper()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"compareTo()", "equalsIgnoreCase()", "equals()", "match()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"Error", "6", "5", "4"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"he", "lo", "ell", "el"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"replace()", "change()", "substitute()", "modify()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"upper()", "toUpperCase()", "capitalize()", "makeUpper()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "match()", "equalsIgnoreCase()", "compareTo()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "4", "Error", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"el", "he", "ell", "lo"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "replace()", "modify()", "change()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "upper()", "toUpperCase()", "capitalize()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"match()", "equals()", "compareTo()", "equalsIgnoreCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"5", "Error", "4", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"he", "el", "ell", "lo"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"change()", "substitute()", "replace()", "modify()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"capitalize()", "upper()", "makeUpper()", "toUpperCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equalsIgnoreCase()", "equals()", "match()", "compareTo()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "5", "Error", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "lo", "el", "he"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "change()", "modify()", "replace()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"toUpperCase()", "makeUpper()", "upper()", "capitalize()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"match()", "equalsIgnoreCase()", "equals()", "compareTo()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"4", "6", "5", "Error"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "lo", "he", "el"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"replace()", "change()", "substitute()", "modify()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"upper()", "toUpperCase()", "makeUpper()", "capitalize()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"compareTo()", "equals()", "equalsIgnoreCase()", "match()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"4", "Error", "6", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"el", "ell", "he", "lo"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "replace()", "change()", "modify()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"upper()", "makeUpper()", "toUpperCase()", "capitalize()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"compareTo()", "match()", "equals()", "equalsIgnoreCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"5", "Error", "4", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"he", "el", "lo", "ell"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"modify()", "substitute()", "replace()", "change()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "upper()", "capitalize()", "toUpperCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equalsIgnoreCase()", "compareTo()", "equals()", "match()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"4", "5", "Error", "6"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "lo", "el", "he"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "change()", "modify()", "replace()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"toUpperCase()", "capitalize()", "upper()", "makeUpper()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"compareTo()", "equalsIgnoreCase()", "match()", "equals()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"Error", "6", "5", "4"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"lo", "he", "ell", "el"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"replace()", "change()", "substitute()", "modify()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "toUpperCase()", "capitalize()", "upper()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "match()", "equalsIgnoreCase()", "compareTo()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "4", "Error", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"el", "lo", "ell", "he"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "replace()", "change()", "modify()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "upper()", "toUpperCase()", "capitalize()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "compareTo()", "match()", "equalsIgnoreCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"5", "6", "Error", "4"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "el", "lo", "he"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "change()", "replace()", "modify()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"upper()", "capitalize()", "makeUpper()", "toUpperCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equalsIgnoreCase()", "equals()", "compareTo()", "match()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "5", "4", "Error"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"lo", "he", "el", "ell"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"modify()", "substitute()", "change()", "replace()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"toUpperCase()", "makeUpper()", "capitalize()", "upper()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "equalsIgnoreCase()", "compareTo()", "match()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"4", "6", "5", "Error"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"ell", "he", "lo", "el"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"replace()", "change()", "modify()", "substitute()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"capitalize()", "toUpperCase()", "makeUpper()", "upper()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "compareTo()", "equalsIgnoreCase()", "match()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"Error", "4", "6", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"el", "ell", "lo", "he"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"modify()", "replace()", "change()", "substitute()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"upper()", "capitalize()", "toUpperCase()", "makeUpper()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"match()", "equals()", "compareTo()", "equalsIgnoreCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"5", "Error", "6", "4"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"he", "el", "ell", "lo"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "modify()", "replace()", "change()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "capitalize()", "upper()", "toUpperCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equalsIgnoreCase()", "match()", "equals()", "compareTo()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"6", "5", "4", "Error"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"he", "ell", "el", "lo"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"substitute()", "modify()", "change()", "replace()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"toUpperCase()", "capitalize()", "upper()", "makeUpper()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "equalsIgnoreCase()", "match()", "compareTo()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"Error", "6", "5", "4"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"lo", "ell", "he", "el"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"replace()", "modify()", "substitute()", "change()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"capitalize()", "toUpperCase()", "upper()", "makeUpper()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"match()", "compareTo()", "equalsIgnoreCase()", "equals()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"Error", "4", "6", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"el", "ell", "lo", "he"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"modify()", "replace()", "substitute()", "change()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"makeUpper()", "upper()", "toUpperCase()", "capitalize()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method compares strings ignoring case?",
-		Answers = {"equals()", "match()", "compareTo()", "equalsIgnoreCase()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the result of \"hello\".length()?",
-		Answers = {"5", "Error", "4", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does substring(1, 3) return from 'hello'?",
-		Answers = {"lo", "el", "he", "ell"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method replaces characters in a string?",
-		Answers = {"modify()", "change()", "replace()", "substitute()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method converts string to uppercase?",
-		Answers = {"capitalize()", "makeUpper()", "upper()", "toUpperCase()"},
-		CorrectAnswer = 4
-	},
+	{ Question = "What does the String method substring(1, 4) return from 'abcdef'? (v1)", Answers = {"abc", "bcd", "cde", "def"}, CorrectAnswer = 2 },
+	{ Question = "What is the output of 'hello'.length()? (v2)", Answers = {"4", "5", "6", "Error"}, CorrectAnswer = 2 },
+	{ Question = "Which method compares two strings ignoring case? (v3)", Answers = {"equalsIgnoreCase()", "compareTo()", "equals()", "match()"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method charAt(2) return from 'abcdef'? (v4)", Answers = {"a", "b", "c", "d"}, CorrectAnswer = 3 },
+	{ Question = "What does the String method indexOf('c') return from 'abcdef'? (v5)", Answers = {"2", "3", "1", "-1"}, CorrectAnswer = 2 },
+	{ Question = "What does the String method toUpperCase() return from 'hello'? (v6)", Answers = {"HELLO", "Hello", "hello", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method replace('a', 'b') return from 'banana'? (v7)", Answers = {"banana", "bana", "bnana", "bbnana"}, CorrectAnswer = 3 },
+	{ Question = "What does the String method trim() do? (v8)", Answers = {"Removes whitespace", "Converts to lowercase", "Reverses the string", "None of the above"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method split(',') return from 'a,b,c'? (v9)", Answers = {"['a', 'b', 'c']", "['abc']", "['a,b,c']", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method concat(' world') return from 'hello'? (v10)", Answers = {"hello world", "helloworld", "hello", "Error"}, CorrectAnswer = 1 },
+
+	{ Question = "What does the String method startsWith('he') return from 'hello'? (v11)", Answers = {"true", "false", "Error", "null"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method endsWith('lo') return from 'hello'? (v12)", Answers = {"true", "false", "Error", "null"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method lastIndexOf('l') return from 'hello'? (v13)", Answers = {"3", "2", "1", "-1"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of \"abc\".compareTo(\"abd\")? (v14)", Answers = {"Negative", "0", "Positive", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method contains('ell') return from 'hello'? (v15)", Answers = {"true", "false", "Error", "null"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method equals('Hello') return from 'hello'? (v16)", Answers = {"false", "true", "Throws error", "null"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method contentEquals() do? (v17)", Answers = {"Checks equality with CharSequence", "Checks reference equality", "Returns string length", "Converts string"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method intern() do? (v18)", Answers = {"Returns string from pool", "Creates new string", "Deletes string", "Modifies string"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of 'abc'.toCharArray()[0]? (v19)", Answers = {"'a'", "'b'", "'c'", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method valueOf(123) return? (v20)", Answers = {"\"123\"", "\"abc\"", "\"1\"", "Error"}, CorrectAnswer = 1 },
+
+	{ Question = "What is the return type of String.format()? (v21)", Answers = {"String", "Object", "void", "int"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method replaceAll() accept as arguments? (v22)", Answers = {"Regex and replacement string", "Strings only", "Integers", "Characters"}, CorrectAnswer = 1 },
+	{ Question = "What does the String method matches() do? (v23)", Answers = {"Checks regex match", "Replaces substring", "Returns length", "Splits string"}, CorrectAnswer = 1 },
+	{ Question = "What does the String class method join() do? (v24)", Answers = {"Concatenates sequences with delimiter", "Splits string", "Compares strings", "Reverses string"}, CorrectAnswer = 1 },
+	{ Question = "What will \"abc\\n\".length() return? (v25)", Answers = {"4", "3", "5", "Error"}, CorrectAnswer = 1 },
+	{ Question = "How does String.substring(0) behave? (v26)", Answers = {"Returns whole string", "Returns empty string", "Throws exception", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "What does String.isEmpty() check? (v27)", Answers = {"If length is zero", "If string is null", "If string contains spaces", "Always false"}, CorrectAnswer = 1 },
+	{ Question = "What happens when you compare strings with == in Java? (v28)", Answers = {"Compares references", "Compares contents", "Always true", "Always false"}, CorrectAnswer = 1 },
+	{ Question = "How is String constant pool related to strings? (v29)", Answers = {"Stores literal strings", "Stores integers", "Stores objects", "Stores primitives"}, CorrectAnswer = 1 },
+	{ Question = "What will String.valueOf(null) return? (v30)", Answers = {"\"null\"", "NullPointerException", "Empty string", "Error"}, CorrectAnswer = 1 },
+
+	{ Question = "What is the returned value when String.trim() removes? (v31)", Answers = {"Leading and trailing whitespace", "All spaces", "All characters", "Nothing"}, CorrectAnswer = 1 },
+	{ Question = "What does String.codePointAt(0) return? (v32)", Answers = {"Unicode code point of character", "Character at index 0", "ASCII value", "String length"}, CorrectAnswer = 1 },
+	{ Question = "What does String.regionMatches() do? (v33)", Answers = {"Compares substrings", "Reverses string", "Splits string", "Checks prefix"}, CorrectAnswer = 1 },
+	{ Question = "How to convert String to byte array? (v34)", Answers = {"getBytes()", "toCharArray()", "getBytesUnicode()", "None"}, CorrectAnswer = 1 },
+	{ Question = "Which escape sequence represents a tab? (v35)", Answers = {"\\t", "\\n", "\\b", "\\r"}, CorrectAnswer = 1 },
+	{ Question = "What does String.codePointCount() return? (v36)", Answers = {"Number of Unicode code points", "Length in chars", "Number of bytes", "Number of lines"}, CorrectAnswer = 1 },
+	{ Question = "Does String class implement Comparable? (v37)", Answers = {"Yes", "No", "Sometimes", "Only subclasses"}, CorrectAnswer = 1 },
+	{ Question = "What is the result of String.compareTo() == 0? (v38)", Answers = {"Strings are lexically equal", "Strings are same object", "Strings are different", "Error"}, CorrectAnswer = 1 },
+	{ Question = "Can String be subclassed? (v39)", Answers = {"No, it's final", "Yes", "Only abstract subclass", "Only inside JDK"}, CorrectAnswer = 1 },
+	{ Question = "Is Java String immutable? (v40)", Answers = {"Yes", "No", "Sometimes", "Depends"}, CorrectAnswer = 1 },
+
+	{ Question = "What does String.concat() do? (v41)", Answers = {"Concatenates two strings", "Replaces substring", "Splits string", "Converts to array"}, CorrectAnswer = 1 },
+	{ Question = "What happens if substring(int beginIndex, int endIndex) has beginIndex > endIndex? (v42)", Answers = {"Throws StringIndexOutOfBoundsException", "Returns empty string", "Returns whole string", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "What does String.format(\"%d\", 10) return? (v43)", Answers = {"10", "\"10\"", "\"%d\"", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does String.equalsIgnoreCase() ignore? (v44)", Answers = {"String case", "Spaces", "Numbers", "Length"}, CorrectAnswer = 1 },
+	{ Question = "What is the index of the first character in a String? (v45)", Answers = {"0", "1", "-1", "Depends"}, CorrectAnswer = 1 },
+	{ Question = "What does String.substring(0, 0) return? (v46)", Answers = {"Empty string", "\"\"", "Null", "Throws exception"}, CorrectAnswer = 1 },
+	{ Question = "What does String.copyValueOf() do? (v47)", Answers = {"Creates string from char array", "Copies string", "Copies reference", "Deletes string"}, CorrectAnswer = 1 },
+	{ Question = "How does String.join() treat null elements? (v48)", Answers = {"Throws NullPointerException", "Skips them", "Converts to \"null\"", "Ignores string"}, CorrectAnswer = 1 },
+	{ Question = "What does String.codePointBefore(index) return? (v49)", Answers = {"Code point before index", "Code point at index", "Character at index", "Throws exception"}, CorrectAnswer = 1 },
+	{ Question = "What is the behavior of String.strip() compared to trim()? (v50)", Answers = {"Removes all Unicode whitespace", "Removes ASCII whitespace only", "Reverses string", "No difference"}, CorrectAnswer = 1 },
+
+	{ Question = "How to convert a String to a list of characters? (v51)", Answers = {"toCharArray()", "split('')", "chars()", "None"}, CorrectAnswer = 1 },
+	{ Question = "What does String.isBlank() check? (v52)", Answers = {"Whitespace only or empty", "Empty only", "Null", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is the difference between equals and == for String? (v53)", Answers = {"equals() compares values, == compares references", "Both same", "Both always false", "None"}, CorrectAnswer = 1 },
+	{ Question = "What does the method String.copyValueOf(char[] data, int offset, int count) do? (v54)", Answers = {"Creates string from array segment", "Copies string", "Returns substring", "Deletes characters"}, CorrectAnswer = 1 },
+	{ Question = "What happens if String.indexOf() does not find substring? (v55)", Answers = {"Returns -1", "Throws exception", "Returns 0", "Returns length"}, CorrectAnswer = 1 },
+	{ Question = "What does String.replaceFirst() do? (v56)", Answers = {"Replaces first substring matching regex", "Replaces all occurrences", "Removes substring", "Does nothing"}, CorrectAnswer = 1 },
+	{ Question = "What is the behavior of String.compareToIgnoreCase()? (v57)", Answers = {"Compares lexicographically ignoring case", "Throws exception", "Returns 0", "Converts to lower case"}, CorrectAnswer = 1 },
+	{ Question = "What does String.replace(CharSequence target, CharSequence replacement) return? (v58)", Answers = {"New string with replacements", "Modifies existing string", "Deletes target substring", "Throws error"}, CorrectAnswer = 1 },
+	{ Question = "How does String.matches() differ from contains()? (v59)", Answers = {"Matches entire string with regex", "Looks for substring", "Splits string", "Returns length"}, CorrectAnswer = 1 },
+	{ Question = "Can String be used as a key in HashMap? (v60)", Answers = {"Yes, String's hashCode and equals support this", "No", "Only if mutable", "Depends"}, CorrectAnswer = 1 },
+
+	{ Question = "How do you create a multi-line string in Java? (v61)", Answers = {"Using text blocks (\"\"\"...\"\"\")", "With + and \\n", "Only concatenation", "Using StringBuffer"}, CorrectAnswer = 1 },
+	{ Question = "What does String.toLowerCase() do? (v62)", Answers = {"Converts string to lowercase", "Modifies existing string", "Throws exception", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "What is the significance of String pool? (v63)", Answers = {"Reuses immutable string literals for memory efficiency", "Slow string creation", "Mutable strings", "None"}, CorrectAnswer = 1 },
+	{ Question = "How to check if a String contains only digits? (v64)", Answers = {"Use regex \\d+", "Use isDigit()", "Use parseInt", "No direct method"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns a stream of characters from a String? (v65)", Answers = {"chars()", "codePoints()", "getChars()", "toCharArray()"}, CorrectAnswer = 1 },
+	{ Question = "What is the result of \"abc\".compareTo(\"abc\")? (v66)", Answers = {"0", "1", "-1", "Error"}, CorrectAnswer = 1 },
+	{ Question = "How to split a string by whitespace? (v67)", Answers = {"split(\"\\\\s+\")", "split(' ')", "split() throws error", "Use tokenizer"}, CorrectAnswer = 1 },
+	{ Question = "When would String.equals return false? (v68)", Answers = {"Different sequence of characters", "Same reference", "Null string", "None"}, CorrectAnswer = 1 },
+	{ Question = "Which class handles mutable character sequences? (v69)", Answers = {"StringBuilder or StringBuffer", "String", "CharSequence", "StringUtils"}, CorrectAnswer = 1 },
+	{ Question = "What's the difference between StringBuilder and StringBuffer? (v70)", Answers = {"StringBuffer is synchronized", "StringBuilder is thread-safe", "Same", "No difference"}, CorrectAnswer = 1 },
+
+	{ Question = "What method converts a String to an int? (v71)", Answers = {"Integer.parseInt()", "String.toInt()", "parseInt()", "toInteger()"}, CorrectAnswer = 1 },
+	{ Question = "Which method concatenates multiple strings efficiently? (v72)", Answers = {"StringBuilder.append()", "String.concat()", "String.join()", "String.add()"}, CorrectAnswer = 1 },
+	{ Question = "What does String.repeat(3) do? (v73)", Answers = {"Repeats the string 3 times", "Throws exception", "Reverses string", "Returns length"}, CorrectAnswer = 1 },
+	{ Question = "How to check if a String is blank (empty or whitespace-only)? (v74)", Answers = {"isBlank()", "isEmpty()", "trim().length() == 0", "equals(\"\")"}, CorrectAnswer = 1 },
+	{ Question = "What is the result of String.intern()? (v75)", Answers = {"Returns canonical representation from pool", "Creates new string", "Deletes string", "Modifies string"}, CorrectAnswer = 1 },
+	{ Question = "Which encoding is used by default in String.getBytes()? (v76)", Answers = {"Platform default charset", "UTF-8", "ASCII", "ISO-8859-1"}, CorrectAnswer = 1 },
+	{ Question = "What does String.indexOf(char ch, int fromIndex) do? (v77)", Answers = {"Finds index of ch starting from fromIndex", "Always returns index zero", "Throws exception", "Returns last index"}, CorrectAnswer = 1 },
+	{ Question = "What does String.stripLeading() do? (v78)", Answers = {"Removes leading whitespace", "Removes trailing whitespace", "Removes all whitespace", "No effect"}, CorrectAnswer = 1 },
+	{ Question = "What does String.stripTrailing() do? (v79)", Answers = {"Removes trailing whitespace", "Removes leading whitespace", "Removes all whitespace", "No effect"}, CorrectAnswer = 1 },
+	{ Question = "Can String object represent Unicode characters? (v80)", Answers = {"Yes", "No", "Only ASCII", "Only Latin-1"}, CorrectAnswer = 1 },
+
+	{ Question = "What is the difference between length() and codePointCount()? (v81)", Answers = {"length() counts chars, codePointCount counts Unicode code points", "Same", "length() counts Unicode", "codePointCount counts chars"}, CorrectAnswer = 1 },
+	{ Question = "Which method converts String to char[]? (v82)", Answers = {"toCharArray()", "chars()", "codePoints()", "getChars()"}, CorrectAnswer = 1 },
+	{ Question = "What does String.getBytes(Charset charset) return? (v83)", Answers = {"Byte array encoding string", "String converted to ByteBuffer", "String length", "Integer representation"}, CorrectAnswer = 1 },
+	{ Question = "What does String.lastIndexOf(String str) do? (v84)", Answers = {"Returns last index of substring str", "Returns first index", "Returns -1 always", "Errors"}, CorrectAnswer = 1 },
+	{ Question = "What does the method String.compareToIgnoreCase() do? (v85)", Answers = {"Compares strings ignoring case", "Checks equals ignoring case", "Throws exception", "Converts and compares"}, CorrectAnswer = 1 },
+	{ Question = "What will String.valueOf(null) return? (v86)", Answers = {"\"null\"", "NullPointerException", "Empty string", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does String.chars() method return? (v87)", Answers = {"IntStream of Unicode code units", "Stream of strings", "ArrayList", "List"}, CorrectAnswer = 1 },
+	{ Question = "How does substring() handle negative indexes? (v88)", Answers = {"Throws IndexOutOfBoundsException", "Creates empty string", "Treats as zero", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "What does String.offsetByCodePoints() do? (v89)", Answers = {"Calculates index shifted by code points", "Shifts string", "Returns length", "Converts encoding"}, CorrectAnswer = 1 },
+	{ Question = "Is String thread-safe? (v90)", Answers = {"Yes, immutable", "No", "Yes, mutable", "Depends on JVM"}, CorrectAnswer = 1 },
+
+	{ Question = "What happens when using new String(\"abc\")? (v91)", Answers = {"Creates new String object", "Returns interned string", "Throws Exception", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "Which package contains String class? (v92)", Answers = {"java.lang", "java.util", "java.io", "java.text"}, CorrectAnswer = 1 },
+	{ Question = "What is the output of \"a\" + \"b\" in Java? (v93)", Answers = {"\"ab\"", "\"a b\"", "\"a+b\"", "Error"}, CorrectAnswer = 1 },
+	{ Question = "How to convert String to int in Java? (v94)", Answers = {"Integer.parseInt()", "String.toInt()", "parseInt()", "None"}, CorrectAnswer = 1 },
+	{ Question = "What is the default length of an empty string? (v95)", Answers = {"0", "1", "-1", "Throws exception"}, CorrectAnswer = 1 },
+	{ Question = "What does String.getBytes() return? (v96)", Answers = {"Byte array", "String length", "Character array", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What does String.format(\"%.2f\", 3.1415) return? (v97)", Answers = {"\"3.14\"", "\"3.1415\"", "\"3\"", "Error"}, CorrectAnswer = 1 },
+	{ Question = "What is the default constructor of String? (v98)", Answers = {"Creates empty string", "Creates null string", "Creates null pointer", "Throws exception"}, CorrectAnswer = 1 },
+	{ Question = "How to safely compare two strings for equality? (v99)", Answers = {"Use equals() method", "Use == operator", "Use compareTo()", "Use toString()"}, CorrectAnswer = 1 },
+	{ Question = "How to convert a string to lowercase? (v100)", Answers = {"toLowerCase()", "toLower()", "lowercase()", "convertLower()"}, CorrectAnswer = 1 },
 }
 
 QuestionBank.ArrayList = {
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"add()", "insert()", "append()", "put()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"pop(index)", "remove(index)", "erase(index)", "delete(index)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Type of list", "Number of elements", "Length in bytes"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"16", "5", "0", "10"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"get(0)", "top()", "elementAt(1)", "first()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "add()", "append()", "put()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "pop(index)", "remove(index)", "delete(index)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Type of list", "Length in bytes", "Capacity", "Number of elements"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"10", "16", "0", "5"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "get(0)", "first()", "elementAt(1)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"append()", "insert()", "add()", "put()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "pop(index)", "delete(index)", "remove(index)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Number of elements", "Type of list", "Capacity", "Length in bytes"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"16", "10", "5", "0"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "elementAt(1)", "get(0)", "first()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "append()", "put()", "add()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"remove(index)", "pop(index)", "erase(index)", "delete(index)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Type of list", "Number of elements", "Capacity", "Length in bytes"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"0", "5", "10", "16"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "elementAt(1)", "first()", "get(0)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"add()", "append()", "insert()", "put()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "remove(index)", "delete(index)", "pop(index)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Type of list", "Number of elements", "Length in bytes"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"16", "5", "0", "10"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"get(0)", "top()", "elementAt(1)", "first()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"append()", "add()", "put()", "insert()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"pop(index)", "erase(index)", "remove(index)", "delete(index)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Length in bytes", "Capacity", "Type of list", "Number of elements"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"10", "16", "0", "5"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "get(0)", "elementAt(1)", "first()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "append()", "add()", "put()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"delete(index)", "pop(index)", "erase(index)", "remove(index)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Number of elements", "Length in bytes", "Type of list", "Capacity"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "10", "16", "0"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "elementAt(1)", "get(0)", "first()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"append()", "insert()", "put()", "add()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"remove(index)", "delete(index)", "erase(index)", "pop(index)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Length in bytes", "Number of elements", "Type of list", "Capacity"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "0", "10", "16"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"first()", "top()", "elementAt(1)", "get(0)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"add()", "append()", "insert()", "put()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "remove(index)", "pop(index)", "delete(index)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Length in bytes", "Number of elements", "Type of list"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "0", "16", "10"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"get(0)", "top()", "elementAt(1)", "first()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "add()", "append()", "put()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"delete(index)", "erase(index)", "remove(index)", "pop(index)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Type of list", "Length in bytes", "Number of elements"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"10", "5", "16", "0"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"first()", "get(0)", "top()", "elementAt(1)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "put()", "add()", "append()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "delete(index)", "pop(index)", "remove(index)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Number of elements", "Capacity", "Length in bytes", "Type of list"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"0", "10", "16", "5"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"elementAt(1)", "top()", "get(0)", "first()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"put()", "append()", "insert()", "add()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"remove(index)", "erase(index)", "delete(index)", "pop(index)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Type of list", "Number of elements", "Capacity", "Length in bytes"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "16", "10", "0"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"first()", "top()", "elementAt(1)", "get(0)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"add()", "insert()", "append()", "put()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "remove(index)", "delete(index)", "pop(index)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Length in bytes", "Number of elements", "Type of list"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"16", "5", "0", "10"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"get(0)", "top()", "elementAt(1)", "first()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "add()", "append()", "put()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"delete(index)", "erase(index)", "remove(index)", "pop(index)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Length in bytes", "Capacity", "Type of list", "Number of elements"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"10", "16", "5", "0"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"first()", "get(0)", "top()", "elementAt(1)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"put()", "append()", "add()", "insert()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"pop(index)", "delete(index)", "erase(index)", "remove(index)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Number of elements", "Length in bytes", "Type of list", "Capacity"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"0", "10", "16", "5"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"first()", "elementAt(1)", "get(0)", "top()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"append()", "put()", "insert()", "add()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"remove(index)", "pop(index)", "delete(index)", "erase(index)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Number of elements", "Length in bytes", "Type of list"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "0", "10", "16"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"elementAt(1)", "top()", "first()", "get(0)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"add()", "insert()", "put()", "append()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "remove(index)", "delete(index)", "pop(index)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Type of list", "Length in bytes", "Number of elements", "Capacity"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"0", "16", "5", "10"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"get(0)", "top()", "first()", "elementAt(1)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "add()", "put()", "append()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "delete(index)", "remove(index)", "pop(index)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Length in bytes", "Capacity", "Type of list", "Number of elements"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"10", "16", "0", "5"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"elementAt(1)", "get(0)", "top()", "first()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"insert()", "put()", "add()", "append()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"erase(index)", "pop(index)", "delete(index)", "remove(index)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Number of elements", "Length in bytes", "Capacity", "Type of list"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"16", "10", "5", "0"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"top()", "elementAt(1)", "get(0)", "first()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method adds an element to an ArrayList?",
-		Answers = {"put()", "append()", "insert()", "add()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you remove an element by index?",
-		Answers = {"remove(index)", "pop(index)", "delete(index)", "erase(index)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does ArrayList.size() return?",
-		Answers = {"Capacity", "Number of elements", "Type of list", "Length in bytes"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the initial capacity of an ArrayList?",
-		Answers = {"5", "16", "10", "0"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you access the first element?",
-		Answers = {"elementAt(1)", "top()", "first()", "get(0)"},
-		CorrectAnswer = 4
-	},
+	{ Question = "What is the default initial capacity of an ArrayList? (v1)", Answers = {"8", "10", "0", "16"}, CorrectAnswer = 2 },
+	{ Question = "How do you remove an element by index in an ArrayList? (v2)", Answers = {"removeAt()", "delete()", "remove(index)", "pop(index)"}, CorrectAnswer = 3 },
+	{ Question = "Which method adds an element to an ArrayList? (v3)", Answers = {"append()", "add()", "insert()", "put()"}, CorrectAnswer = 2 },
+	{ Question = "How do you check the size of an ArrayList? (v4)", Answers = {"size()", "length()", "count()", "getSize()"}, CorrectAnswer = 1 },
+	{ Question = "How do you access an element at index 0 in an ArrayList? (v5)", Answers = {"get(0)", "access(0)", "elementAt(0)", "first()"}, CorrectAnswer = 1 },
+	{ Question = "What method is used to clear all elements from an ArrayList? (v6)", Answers = {"clear()", "removeAll()", "deleteAll()", "reset()"}, CorrectAnswer = 1 },
+	{ Question = "How do you check if an ArrayList is empty? (v7)", Answers = {"isEmpty()", "empty()", "size() == 0", "count() == 0"}, CorrectAnswer = 1 },
+	{ Question = "What is the return type of the get() method in an ArrayList? (v8)", Answers = {"Object", "int", "String", "void"}, CorrectAnswer = 1 },
+	{ Question = "How do you add an element at a specific index in an ArrayList? (v9)", Answers = {"add(index, element)", "insert(index, element)", "put(index, element)", "append(index, element)"}, CorrectAnswer = 1 },
+	{ Question = "What happens if you try to access an index that is out of bounds in an ArrayList? (v10)", Answers = {"Returns null", "Throws IndexOutOfBoundsException", "Returns 0", "No effect"}, CorrectAnswer = 2 },
+
+	{ Question = "What is the default growth factor of an ArrayList when it expands? (v11)", Answers = {"50%", "100%", "25%", "75%"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns an iterator over the elements in an ArrayList? (v12)", Answers = {"iterator()", "listIterator()", "getIterator()", "elements()"}, CorrectAnswer = 1 },
+	{ Question = "How do you convert an ArrayList to an array? (v13)", Answers = {"toArray()", "asArray()", "toList()", "getArray()"}, CorrectAnswer = 1 },
+	{ Question = "What does the method contains() do in an ArrayList? (v14)", Answers = {"Checks if list contains an element", "Removes element", "Adds element", "Returns index"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns the index of the first occurrence of an element? (v15)", Answers = {"indexOf()", "lastIndexOf()", "find()", "search()"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns the index of the last occurrence of an element? (v16)", Answers = {"lastIndexOf()", "indexOf()", "findLast()", "searchLast()"}, CorrectAnswer = 1 },
+	{ Question = "How do you insert an element at the end of an ArrayList? (v17)", Answers = {"add(element)", "addLast(element)", "append(element)", "insert(element)"}, CorrectAnswer = 1 },
+	{ Question = "Which method trims the capacity of an ArrayList to its current size? (v18)", Answers = {"trimToSize()", "reduceCapacity()", "shrink()", "compact()"}, CorrectAnswer = 1 },
+	{ Question = "What exception is thrown if you call remove() on an empty ArrayList? (v19)", Answers = {"IndexOutOfBoundsException", "NoSuchElementException", "NullPointerException", "IllegalStateException"}, CorrectAnswer = 1 },
+	{ Question = "What is the time complexity of accessing an element by index in an ArrayList? (v20)", Answers = {"O(1)", "O(n)", "O(log n)", "O(n log n)"}, CorrectAnswer = 1 },
+
+	{ Question = "What is the time complexity of adding an element at the end of an ArrayList? (v21)", Answers = {"Amortized O(1)", "O(n)", "O(log n)", "O(n log n)"}, CorrectAnswer = 1 },
+	{ Question = "What is the time complexity of removing an element at a specific index in an ArrayList? (v22)", Answers = {"O(n)", "O(1)", "O(log n)", "O(n log n)"}, CorrectAnswer = 1 },
+	{ Question = "Which interface does ArrayList implement related to list iteration? (v23)", Answers = {"ListIterator", "Iterator", "Iterable", "Enumeration"}, CorrectAnswer = 2 },
+	{ Question = "What does the method ensureCapacity(int minCapacity) do? (v24)", Answers = {"Increases capacity to at least minCapacity", "Sets size to minCapacity", "Removes extra capacity", "Clears the list"}, CorrectAnswer = 1 },
+	{ Question = "Can ArrayList hold null elements? (v25)", Answers = {"Yes", "No", "Only if type allows", "Depends on JVM"}, CorrectAnswer = 1 },
+	{ Question = "What happens when ArrayList is converted to an array if the specified array is smaller? (v26)", Answers = {"A new array of correct size is created", "Throws exception", "Returns original array", "Returns null"}, CorrectAnswer = 1 },
+	{ Question = "Which method replaces all elements with a specified value? (v27)", Answers = {"replaceAll()", "fill()", "setAll()", "updateAll()"}, CorrectAnswer = 1 },
+	{ Question = "How do you iterate over an ArrayList with an enhanced for loop? (v28)", Answers = {"for(Type item : list)", "for each", "for i in list", "foreach"}, CorrectAnswer = 1 },
+	{ Question = "What does the method subList(int fromIndex, int toIndex) return? (v29)", Answers = {"A view of the specified range within the ArrayList", "New ArrayList copy", "Array subset", "Throws exception"}, CorrectAnswer = 1 },
+	{ Question = "Which method adds all elements of a collection to an ArrayList? (v30)", Answers = {"addAll()", "addCollection()", "putAll()", "appendAll()"}, CorrectAnswer = 1 },
+
+	{ Question = "How do you check if two ArrayLists are equal? (v31)", Answers = {"Using equals() method", "== operator", "compare()", "hashCode()"}, CorrectAnswer = 1 },
+	{ Question = "What does the method removeAll(Collection c) do? (v32)", Answers = {"Removes from list all elements contained in c", "Removes c from list", "Clears list", "Returns list"}, CorrectAnswer = 1 },
+	{ Question = "Which method retains only the elements in this list that are contained in the specified collection? (v33)", Answers = {"retainAll()", "keepAll()", "filter()", "intersect()"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns true if the ArrayList contains all elements of the specified collection? (v34)", Answers = {"containsAll()", "contains()", "matchAll()", "hasAll()"}, CorrectAnswer = 1 },
+	{ Question = "What does the ensureCapacity method improve? (v35)", Answers = {"Performance by reducing reallocations", "Memory usage", "Thread safety", "Computational complexity"}, CorrectAnswer = 1 },
+	{ Question = "What type of list is ArrayList? (v36)", Answers = {"Resizable array implementation of the List interface", "Linked list", "Fixed-size list", "Stack"}, CorrectAnswer = 1 },
+	{ Question = "Which package is ArrayList part of? (v37)", Answers = {"java.util", "java.lang", "java.io", "java.collection"}, CorrectAnswer = 1 },
+	{ Question = "What happens if you add an element at an index greater than size? (v38)", Answers = {"Throws IndexOutOfBoundsException", "Expands list", "Inserts at the end", "Ignores"}, CorrectAnswer = 1 },
+	{ Question = "Which method removes the first occurrence of the specified element? (v39)", Answers = {"remove(Object o)", "delete(Object o)", "removeAt(Object o)", "pop(Object o)"}, CorrectAnswer = 1 },
+	{ Question = "What does isEmpty() return if the ArrayList contains elements? (v40)", Answers = {"false", "true", "Throws exception", "null"}, CorrectAnswer = 1 },
+
+	{ Question = "How does the ArrayList iterator handle concurrent modifications? (v41)", Answers = {"Throws ConcurrentModificationException", "Continues silently", "Logs warning", "Returns stale data"}, CorrectAnswer = 1 },
+	{ Question = "What method converts an ArrayList to a Stream? (v42)", Answers = {"stream()", "toStream()", "asStream()", "getStream()"}, CorrectAnswer = 1 },
+	{ Question = "How to sort an ArrayList? (v43)", Answers = {"Collections.sort(list)", "list.sort()", "Arrays.sort()", "list.order()"}, CorrectAnswer = 1 },
+	{ Question = "Which method removes elements based on a Predicate? (v44)", Answers = {"removeIf()", "filter()", "removeAll()", "clear()"}, CorrectAnswer = 1 },
+	{ Question = "How to get an unmodifiable view of an ArrayList? (v45)", Answers = {"Collections.unmodifiableList(list)", "list.unmodifiable()", "list.readOnly()", "list.unmodifiableList()"}, CorrectAnswer = 1 },
+	{ Question = "Is ArrayList synchronized? (v46)", Answers = {"No", "Yes", "Only when wrapped", "Sometimes"}, CorrectAnswer = 1 },
+	{ Question = "How to make ArrayList thread-safe? (v47)", Answers = {"Use Collections.synchronizedList()", "Use synchronized keyword", "Use CopyOnWriteArrayList", "Both 1 and 3"}, CorrectAnswer = 4 },
+	{ Question = "What does the method listIterator() return? (v48)", Answers = {"ListIterator over elements", "Iterator", "Enumeration", "Iterable"}, CorrectAnswer = 1 },
+	{ Question = "Can ArrayList hold heterogeneous objects? (v49)", Answers = {"Yes, if raw or Object type", "No, only one type", "Only primitives", "Only numbers"}, CorrectAnswer = 1 },
+	{ Question = "What is the effect of calling clear() on an ArrayList? (v50)", Answers = {"Removes all elements", "Shrinks capacity", "Deletes list", "Reinitializes list"}, CorrectAnswer = 1 },
+
+	{ Question = "What happens internally when an ArrayList grows beyond capacity? (v51)", Answers = {"Resizes internal array and copies elements", "Throws error", "Deletes old elements", "Blocks addition"}, CorrectAnswer = 1 },
+	{ Question = "How to convert an ArrayList to an array of specific type? (v52)", Answers = {"toArray(new Type[0])", "toTypedArray()", "toArray()", "getArray()"}, CorrectAnswer = 1 },
+	{ Question = "What method sets the element at a specified position? (v53)", Answers = {"set(index, element)", "update(index, element)", "replace(index, element)", "put(index, element)"}, CorrectAnswer = 1 },
+	{ Question = "What is the difference between size() and capacity of an ArrayList? (v54)", Answers = {"Size is number of elements; capacity is allocated space", "Same", "Capacity is size + 1", "Never differs"}, CorrectAnswer = 1 },
+	{ Question = "How is capacity increased when resizing ArrayList? (v55)", Answers = {"Approximately 50% increase", "Double", "Constant", "Add 10"}, CorrectAnswer = 1 },
+	{ Question = "What does the contains() method use to check equality? (v56)", Answers = {"equals() method", "== operator", "hashCode()", "toString()"}, CorrectAnswer = 1 },
+	{ Question = "Does ArrayList support random access efficiently? (v57)", Answers = {"Yes", "No", "Depends on implementation", "Only LinkedList does"}, CorrectAnswer = 1 },
+	{ Question = "Which class implements the RandomAccess interface? (v58)", Answers = {"ArrayList", "LinkedList", "Vector", "Stack"}, CorrectAnswer = 1 },
+	{ Question = "How can you convert an ArrayList to a LinkedList? (v59)", Answers = {"new LinkedList<>(list)", "list.toLinkedList()", "Collections.toLinkedList(list)", "No method"}, CorrectAnswer = 1 },
+	{ Question = "What will ArrayList.addAll(null) do? (v60)", Answers = {"Throws NullPointerException", "Adds nothing", "Adds null element", "No effect"}, CorrectAnswer = 1 },
+
+	{ Question = "How to remove an element from an ArrayList while iterating? (v61)", Answers = {"Using Iterator's remove() method", "Using list.remove()", "Using clear()", "Using pop()"}, CorrectAnswer = 1 },
+	{ Question = "What does the removeRange() method do? (v62)", Answers = {"Removes elements in a specified index range", "Removes all elements", "Removes nulls", "Not supported"}, CorrectAnswer = 1 },
+	{ Question = "What happens if you add an element at index size()? (v63)", Answers = {"Adds to the end", "Throws exception", "Inserts at beginning", "Deletes element"}, CorrectAnswer = 1 },
+	{ Question = "How do you clone an ArrayList? (v64)", Answers = {"Using clone() method", "Using copy constructor", "Using toArray()", "Cannot clone"}, CorrectAnswer = 1 },
+	{ Question = "What interface does ArrayList implement for serialization? (v65)", Answers = {"Serializable", "Cloneable", "Remote", "Externalizable"}, CorrectAnswer = 1 },
+	{ Question = "Which collection class is preferred in multithreaded environment? (v66)", Answers = {"CopyOnWriteArrayList", "ArrayList", "LinkedList", "Vector"}, CorrectAnswer = 1 },
+	{ Question = "What’s the return value of add(E e) in ArrayList? (v67)", Answers = {"true", "void", "false", "int"}, CorrectAnswer = 1 },
+	{ Question = "What is the outcome of calling ensureCapacity(100)? (v68)", Answers = {"ArrayList capacity becomes at least 100", "Size grows to 100", "List cleared", "Capacity unchanged"}, CorrectAnswer = 1 },
+	{ Question = "What is the advantage of using ArrayList over array? (v69)", Answers = {"Resizable size", "Faster access", "Smaller memory", "Thread-safe"}, CorrectAnswer = 1 },
+	{ Question = "Can ArrayList contain duplicate elements? (v70)", Answers = {"Yes", "No", "Only unique", "Depends"}, CorrectAnswer = 1 },
+
+	{ Question = "Which method returns the element at a specified index? (v71)", Answers = {"get(int index)", "element(int index)", "fetch(int index)", "find(int index)"}, CorrectAnswer = 1 },
+	{ Question = "Is ArrayList synchronized by default? (v72)", Answers = {"No", "Yes", "Depends", "Sometimes"}, CorrectAnswer = 1 },
+	{ Question = "Which class is the parent of ArrayList? (v73)", Answers = {"AbstractList", "List", "Collection", "Object"}, CorrectAnswer = 1 },
+	{ Question = "ArrayList’s internal data structure is a: (v74)", Answers = {"Resizable array", "Linked list", "Hash table", "Binary tree"}, CorrectAnswer = 1 },
+	{ Question = "How do you create an ArrayList with a specific initial capacity? (v75)", Answers = {"new ArrayList<>(capacity)", "ArrayList.setCapacity(capacity)", "new ArrayList()", "capacity is fixed"}, CorrectAnswer = 1 },
+	{ Question = "Which method replaces the first occurrence of an element? (v76)", Answers = {"set(index, element)", "replace()", "update()", "swap()"}, CorrectAnswer = 1 },
+	{ Question = "What does ArrayList's iterator() return? (v77)", Answers = {"Iterator to traverse", "List", "Array", "Stream"}, CorrectAnswer = 1 },
+	{ Question = "What happens if you modify ArrayList during iteration without iterator’s remove()? (v78)", Answers = {"ConcurrentModificationException", "No effect", "Ignores modification", "Locks the list"}, CorrectAnswer = 1 },
+	{ Question = "How to copy all elements from one ArrayList to another? (v79)", Answers = {"addAll()", "copy()", "clone()", "copyTo()"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns true if the list contains no elements? (v80)", Answers = {"isEmpty()", "size()==0", "containsAll()", "clear()"}, CorrectAnswer = 1 },
+
+	{ Question = "What is the default load factor of an ArrayList? (v81)", Answers = {"Not applicable", "0.75", "0.5", "1.0"}, CorrectAnswer = 1 },
+	{ Question = "How to convert ArrayList to String? (v82)", Answers = {"toString()", "asString()", "toStr()", "stringify()"}, CorrectAnswer = 1 },
+	{ Question = "Can ArrayList store primitive types directly? (v83)", Answers = {"No, uses boxed types", "Yes", "Only int", "Only boolean"}, CorrectAnswer = 1 },
+	{ Question = "What happens if capacity is exceeded in ArrayList? (v84)", Answers = {"Array resizes and copies", "Error thrown", "Old elements lost", "Capacity fixed"}, CorrectAnswer = 1 },
+	{ Question = "Which method checks if the list contains a specific element? (v85)", Answers = {"contains(Object o)", "containsAll()", "has()", "exists()"}, CorrectAnswer = 1 },
+	{ Question = "What type of data structure best describes ArrayList? (v86)", Answers = {"Dynamic array", "Linked list", "Queue", "Stack"}, CorrectAnswer = 1 },
+	{ Question = "Which method removes elements matching a predicate? (v87)", Answers = {"removeIf(Predicate filter)", "containsIf()", "removeAll()", "clear()"}, CorrectAnswer = 1 },
+	{ Question = "How do you reverse the elements of an ArrayList? (v88)", Answers = {"Collections.reverse(list)", "list.reverse()", "list.invert()", "No direct method"}, CorrectAnswer = 1 },
+	{ Question = "What is an advantage of ArrayList over LinkedList? (v89)", Answers = {"Faster random access", "Faster inserts", "Less memory", "Thread safety"}, CorrectAnswer = 1 },
+	{ Question = "What class should be used for synchronized ArrayList? (v90)", Answers = {"Collections.synchronizedList(new ArrayList<>())", "Vector", "CopyOnWriteArrayList", "ConcurrentArrayList"}, CorrectAnswer = 1 },
+
+	{ Question = "Which method returns the last element of an ArrayList? (v91)", Answers = {"get(size()-1)", "getLast()", "last()", "retrieveLast()"}, CorrectAnswer = 1 },
+	{ Question = "How to clear all elements in an ArrayList? (v92)", Answers = {"clear()", "removeAll()", "deleteAll()", "reset()"}, CorrectAnswer = 1 },
+	{ Question = "What does ArrayList.toArray() return? (v93)", Answers = {"Object[] array", "List", "ArrayList", "Collection"}, CorrectAnswer = 1 },
+	{ Question = "Can ArrayList elements be accessed concurrently without synchronization? (v94)", Answers = {"No, not thread-safe", "Yes", "Only reads", "Only writes"}, CorrectAnswer = 1 },
+	{ Question = "Which interface does ArrayList implement for random access? (v95)", Answers = {"RandomAccess", "Iterable", "Serializable", "Cloneable"}, CorrectAnswer = 1 },
+	{ Question = "Is ArrayList suitable for frequent insertions/deletions at beginning? (v96)", Answers = {"No, LinkedList is better", "Yes", "Depends on size", "Sometimes"}, CorrectAnswer = 1 },
+	{ Question = "What happens if null is added to an ArrayList? (v97)", Answers = {"Allowed", "Not allowed", "Throws exception", "Replaced with empty"}, CorrectAnswer = 1 },
+	{ Question = "How to get a stream from an ArrayList? (v98)", Answers = {"stream()", "toStream()", "asStream()", "getStream()"}, CorrectAnswer = 1 },
+	{ Question = "Which method returns a list iterator starting at a specified index? (v99)", Answers = {"listIterator(int index)", "iterator(int index)", "getIterator(int)", "startIterator(int)"}, CorrectAnswer = 1 },
+	{ Question = "What does ArrayList.remove(Object o) return? (v100)", Answers = {"true if element was removed", "void", "boolean always true", "Integer index"}, CorrectAnswer = 1 },
 }
 
 return QuestionBank

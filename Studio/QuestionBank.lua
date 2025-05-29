@@ -1,507 +1,112 @@
 local QuestionBank = {}
 
+Here are 100 unique questions for the Math branch of the QuestionBank:
+
 QuestionBank.Math = {
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"5", "4", "6", "25"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.abs()", "Math.signum()", "Math.floor()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4.0", "3", "3.0", "4"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "2.718", "1.618", "3.14159"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.pow(2, 3)", "Math.square(2, 3)", "Math.exp(2, 3)", "2 * 3"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "5", "4", "6"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.floor()", "Math.abs()", "Math.signum()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4", "4.0", "3", "3.0"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14159", "1.618", "2.718", "3.14"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"2 * 3", "Math.pow(2, 3)", "Math.exp(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"6", "4", "5", "25"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.signum()", "Math.floor()", "Math.round()", "Math.abs()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3.0", "3", "4", "4.0"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14159", "2.718", "3.14"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "2 * 3", "Math.pow(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "6", "4", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.abs()", "Math.round()", "Math.signum()", "Math.floor()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4.0", "3.0", "3", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "1.618", "3.14159", "2.718"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "2 * 3", "Math.square(2, 3)", "Math.pow(2, 3)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"5", "4", "6", "25"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.signum()", "Math.abs()", "Math.round()", "Math.floor()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "4", "3.0", "4.0"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "2.718", "1.618", "3.14159"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.pow(2, 3)", "2 * 3", "Math.exp(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "5", "6", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.signum()", "Math.abs()", "Math.floor()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "4", "4.0", "3.0"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14159", "1.618", "3.14", "2.718"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "Math.pow(2, 3)", "2 * 3", "Math.square(2, 3)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"4", "25", "5", "6"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.floor()", "Math.signum()", "Math.abs()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3.0", "4.0", "4", "3"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"2.718", "3.14159", "1.618", "3.14"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "Math.square(2, 3)", "Math.pow(2, 3)", "2 * 3"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "6", "4", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.abs()", "Math.round()", "Math.floor()", "Math.signum()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4", "3.0", "3", "4.0"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "1.618", "3.14159", "2.718"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "2 * 3", "Math.square(2, 3)", "Math.pow(2, 3)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"5", "25", "4", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.signum()", "Math.abs()", "Math.round()", "Math.floor()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "4.0", "3.0", "4"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14", "2.718", "3.14159"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.pow(2, 3)", "Math.exp(2, 3)", "Math.square(2, 3)", "2 * 3"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "5", "6", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.floor()", "Math.abs()", "Math.signum()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4.0", "4", "3", "3.0"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14159", "1.618", "2.718", "3.14"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.square(2, 3)", "Math.pow(2, 3)", "2 * 3", "Math.exp(2, 3)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"4", "6", "5", "25"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.round()", "Math.signum()", "Math.abs()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3.0", "4.0", "3", "4"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14159", "2.718", "3.14"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"2 * 3", "Math.exp(2, 3)", "Math.pow(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"6", "4", "25", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.abs()", "Math.signum()", "Math.round()", "Math.floor()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "3.0", "4", "4.0"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14", "3.14159", "2.718"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "2 * 3", "Math.square(2, 3)", "Math.pow(2, 3)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"5", "25", "4", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.round()", "Math.abs()", "Math.floor()", "Math.signum()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4", "3", "3.0", "4.0"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "1.618", "2.718", "3.14159"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.pow(2, 3)", "2 * 3", "Math.exp(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "5", "4", "6"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.round()", "Math.abs()", "Math.signum()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4", "3", "4.0", "3.0"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14159", "2.718", "3.14", "1.618"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "Math.pow(2, 3)", "Math.square(2, 3)", "2 * 3"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"25", "4", "5", "6"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.round()", "Math.signum()", "Math.abs()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3.0", "3", "4.0", "4"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14159", "2.718", "3.14"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.square(2, 3)", "Math.exp(2, 3)", "Math.pow(2, 3)", "2 * 3"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"6", "4", "25", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.abs()", "Math.signum()", "Math.floor()", "Math.round()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4.0", "3.0", "3", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "2.718", "3.14159", "1.618"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"2 * 3", "Math.square(2, 3)", "Math.exp(2, 3)", "Math.pow(2, 3)"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"5", "4", "25", "6"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.abs()", "Math.signum()", "Math.round()"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "4", "3.0", "4.0"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "3.14", "2.718", "3.14159"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.pow(2, 3)", "Math.exp(2, 3)", "2 * 3", "Math.square(2, 3)"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"4", "5", "25", "6"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.round()", "Math.abs()", "Math.signum()"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"4", "4.0", "3", "3.0"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14159", "1.618", "3.14", "2.718"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"2 * 3", "Math.pow(2, 3)", "Math.square(2, 3)", "Math.exp(2, 3)"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"4", "25", "5", "6"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.floor()", "Math.round()", "Math.signum()", "Math.abs()"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3.0", "3", "4", "4.0"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"3.14", "3.14159", "1.618", "2.718"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"2 * 3", "Math.exp(2, 3)", "Math.pow(2, 3)", "Math.square(2, 3)"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "What does Math.sqrt(25) return?",
-		Answers = {"4", "6", "25", "5"},
-		CorrectAnswer = 4
-	},
-	{
-		Question = "Which method returns the absolute value of a number?",
-		Answers = {"Math.abs()", "Math.round()", "Math.signum()", "Math.floor()"},
-		CorrectAnswer = 1
-	},
-	{
-		Question = "What does Math.floor(3.9) return?",
-		Answers = {"3", "3.0", "4.0", "4"},
-		CorrectAnswer = 2
-	},
-	{
-		Question = "What is the value of Math.PI?",
-		Answers = {"1.618", "2.718", "3.14159", "3.14"},
-		CorrectAnswer = 3
-	},
-	{
-		Question = "How do you raise 2 to the power 3?",
-		Answers = {"Math.exp(2, 3)", "Math.square(2, 3)", "2 * 3", "Math.pow(2, 3)"},
-		CorrectAnswer = 4
-	},
-}
+    { Question = "What does Math.floor(3.9) return? (v1)", Answers = {"4.0", "3", "3.0", "4"}, CorrectAnswer = 3 },
+    { Question = "Which method returns the absolute value of a number? (v2)", Answers = {"Math.abs()", "Math.floor()", "Math.signum()", "Math.round()"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sqrt(25) return? (v3)", Answers = {"4", "5", "6", "25"}, CorrectAnswer = 2 },
+    { Question = "What does Math.ceil(3.1) return? (v4)", Answers = {"3", "3.0", "4", "4.0"}, CorrectAnswer = 3 },
+    { Question = "What does Math.round(3.5) return? (v5)", Answers = {"3", "4", "3.0", "4.0"}, CorrectAnswer = 2 },
+    { Question = "What does Math.max(5, 10) return? (v6)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 2 },
+    { Question = "What does Math.min(5, 10) return? (v7)", Answers = {"5", "10", "15", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.pow(2, 3) return? (v8)", Answers = {"6", "8", "9", "2"}, CorrectAnswer = 2 },
+    { Question = "What does Math.random() return? (v9)", Answers = {"A random integer", "A random float between 0 and 1", "A random float between 1 and 10", "A random float between -1 and 1"}, CorrectAnswer = 2 },
+    { Question = "What does Math.abs(-5) return? (v10)", Answers = {"-5", "5", "0", "Error"}, CorrectAnswer = 2 },
+
+    { Question = "What is the range of values returned by Math.random()? (v11)", Answers = {"0 inclusive to 1 exclusive", "0 to 1 inclusive", "-1 to 1", "1 to 10"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sign(-10) return? (v12)", Answers = {"-1", "1", "0", "Undefined"}, CorrectAnswer = 1 },
+    { Question = "What is Math.E in Java? (v13)", Answers = {"The base of natural logarithms", "Euler's number", "The value 2.718...", "All of the above"}, CorrectAnswer = 4 },
+    { Question = "What does Math.log(1) return? (v14)", Answers = {"0", "1", "Infinity", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.cos(0) return? (v15)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
+    { Question = "What is the output of Math.toDegrees(Math.PI)? (v16)", Answers = {"90", "180", "360", "0"}, CorrectAnswer = 2 },
+    { Question = "Which function rounds to the nearest integer? (v17)", Answers = {"Math.round()", "Math.floor()", "Math.ceil()", "Math.abs()"}, CorrectAnswer = 1 },
+    { Question = "Math.pow(4, 0.5) returns? (v18)", Answers = {"2", "4", "0.5", "16"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sin(Math.PI / 2) return? (v19)", Answers = {"0", "1", "-1", "0.5"}, CorrectAnswer = 2 },
+    { Question = "What is the value of Math.PI? (v20)", Answers = {"3.14159", "2.718", "1.414", "0"}, CorrectAnswer = 1 },
+
+    { Question = "What does Math.expm1(1) compute? (v21)", Answers = {"e^1 - 1", "log(1)", "1 - e", "None of the above"}, CorrectAnswer = 1 },
+    { Question = "What does Math.cbrt(27) return? (v22)", Answers = {"3", "9", "27", "None"}, CorrectAnswer = 1 },
+    { Question = "Difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v23)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
+    { Question = "Which function converts radians to degrees? (v24)", Answers = {"No direct method", "toDegrees()", "fromRadians()", "degreeConvert()"}, CorrectAnswer = 1 },
+    { Question = "What is returned by Math.min() with no arguments? (v25)", Answers = {"Infinity", "-Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
+    { Question = "What is returned by Math.max() with no arguments? (v26)", Answers = {"-Infinity", "Infinity", "0", "Throws error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log10(100) return? (v27)", Answers = {"2", "3", "10", "100"}, CorrectAnswer = 2 },
+    { Question = "What is Math.hypot(3, 4)? (v28)", Answers = {"5", "7", "1", "12"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sign(0) return? (v29)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sign(-0) return? (v30)", Answers = {"-0", "0", "1", "-1"}, CorrectAnswer = 1 },
+
+    { Question = "What does Math.log1p(0) return? (v31)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "Expression Math.floor(Math.random() * 10) generates? (v32)", Answers = {"Random integer 0-9", "Random integer 1-10", "Random float 0-10", "Random float 0-9"}, CorrectAnswer = 1 },
+    { Question = "What does Math.asin(1) return? (v33)", Answers = {"π/2", "π", "0", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.acos(1) return? (v34)", Answers = {"0", "π/2", "π", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What is the output of Math.round(2.49)? (v35)", Answers = {"2", "3", "2.49", "Error"}, CorrectAnswer = 1 },
+    { Question = "What is the output of Math.round(-2.5)? (v36)", Answers = {"-2", "-3", "-2.5", "Error"}, CorrectAnswer = 2 },
+    { Question = "What does Math.trunc(3.5) return? (v37)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.trunc(-3.5) return? (v38)", Answers = {"-3", "-4", "-3.5", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.imul(2, 4) return? (v39)", Answers = {"8", "6", "16", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.clz32(1) return? (v40)", Answers = {"31", "0", "1", "32"}, CorrectAnswer = 1 },
+
+    { Question = "What does Math.fround(1.5) return? (v41)", Answers = {"1.5", "1", "2", "Error"}, CorrectAnswer = 1 },
+    { Question = "What value does Math.EPSILON represent? (v42)", Answers = {"Smallest difference between two floats", "Eulers number", "Pi approximation", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log2(8) return? (v43)", Answers = {"3", "8", "2", "1"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sinh(0) return? (v44)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.cosh(0) return? (v45)", Answers = {"1", "0", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.tanh(0) return? (v46)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "Which method rounds towards zero? (v47)", Answers = {"trunc()", "floor()", "ceil()", "round()"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sinh(1) approximate? (v48)", Answers = {"1.175", "0.5", "2", "5"}, CorrectAnswer = 1 },
+    { Question = "What does Math.cosh(1) approximate? (v49)", Answers = {"1.543", "2.0", "0.5", "0"}, CorrectAnswer = 1 },
+    { Question = "What is Math.tanh(1) approximately? (v50)", Answers = {"0.761", "1", "0", "2"}, CorrectAnswer = 1 },
+
+    { Question = "What is the default return type of Math operations? (v51)", Answers = {"Number", "String", "Boolean", "Object"}, CorrectAnswer = 1 },
+    { Question = "What does Math.max() with no arguments return? (v52)", Answers = {"-Infinity", "Infinity", "0", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.min() with no arguments return? (v53)", Answers = {"Infinity", "-Infinity", "0", "Error"}, CorrectAnswer = 1 },
+    { Question = "What is Math.clz32(16)? (v54)", Answers = {"27", "28", "16", "31"}, CorrectAnswer = 1 },
+    { Question = "What does Math.fround(1.337) return? (v55)", Answers = {"1.337", "1.33", "1.34", "Error"}, CorrectAnswer = 1 },
+    { Question = "Which function returns the nearest integer? (v56)", Answers = {"round()", "floor()", "ceil()", "trunc()"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log2(1) return? (v57)", Answers = {"0", "1", "undefined", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log10(1000) return? (v58)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
+    { Question = "What is the value of Math.sqrt(0)? (v59)", Answers = {"0", "NaN", "1", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.random() * 100 generate? (v60)", Answers = {"A random float between 0 and 100", "A random integer between 0 and 100", "Always 100", "Always 0"}, CorrectAnswer = 1 },
+
+    { Question = "What is Math.abs(Math.pow(-2, 3))? (v61)", Answers = {"8", "-8", "2", "-2"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sign(0) return? (v62)", Answers = {"0", "-0", "1", "-1"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sign(-10) return? (v63)", Answers = {"-1", "1", "0", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sqrt(9) return? (v64)", Answers = {"3", "9", "81", "1"}, CorrectAnswer = 1 },
+    { Question = "What does Math.pow(3, 2) return? (v65)", Answers = {"9", "6", "3", "8"}, CorrectAnswer = 1 },
+    { Question = "Which function returns positive infinity? (v66)", Answers = {"Infinity", "-Infinity", "NaN", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.E represent? (v67)", Answers = {"Euler's number", "Pi", "Natural log", "0"}, CorrectAnswer = 1 },
+    { Question = "What is the difference between Math.floor(-3.5) and Math.ceil(-3.5)? (v68)", Answers = {"-4 and -3", "-3 and -4", "-3 and -3", "-4 and -4"}, CorrectAnswer = 1 },
+    { Question = "What is the output of Math.round(4.5)? (v69)", Answers = {"5", "4", "4.5", "Error"}, CorrectAnswer = 1 },
+    { Question = "What is the output of Math.round(-1.1)? (v70)", Answers = {"-1", "-2", "1", "Error"}, CorrectAnswer = 1 },
+
+    { Question = "What is the output of Math.floor(-2.3)? (v71)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
+    { Question = "What does Math.ceil(-2.3) return? (v72)", Answers = {"-2", "-3", "2", "3"}, CorrectAnswer = 1 },
+    { Question = "What does Math.abs(-0) return? (v73)", Answers = {"0", "-0", "NaN", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log(Math.E) return? (v74)", Answers = {"1", "0", "E", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.atan(1) return? (v75)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.atan2(1, 1) return? (v76)", Answers = {"π/4", "π/2", "π", "0"}, CorrectAnswer = 1 },
+    { Question = "What is the output of Math.log(10) approximately? (v77)", Answers = {"2.302", "1", "10", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sqrt(16) return? (v78)", Answers = {"4", "16", "2", "8"}, CorrectAnswer = 1 },
+    { Question = "What does Math.pow(2, 10) return? (v79)", Answers = {"1024", "512", "256", "128"}, CorrectAnswer = 1 },
+    { Question = "What does Math.random() * 50 generate? (v80)", Answers = {"A random float between 0 and 50", "A random integer between 0 and 50", "Always 50", "Always 0"}, CorrectAnswer = 1 },
+
+    { Question = "What is the output of Math.floor(5.9)? (v81)", Answers = {"5", "6", "5.9", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.ceil(5.1) return? (v82)", Answers = {"5", "6", "5.1", "Error"}, CorrectAnswer = 2 },
+    { Question = "What does Math.abs(-10) return? (v83)", Answers = {"10", "-10", "0", "Error"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log(0) return? (v84)", Answers = {"-Infinity", "Infinity", "0", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.sin(π/2) return? (v85)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 2 },
+    { Question = "What does Math.cos(π) return? (v86)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 3 },
+    { Question = "What does Math.tan(0) return? (v87)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log1p(1) return? (v88)", Answers = {"0.693", "1", "2", "NaN"}, CorrectAnswer = 1 },
+    { Question = "What does Math.hypot(6, 8) return? (v89)", Answers = {"10", "14", "8", "6"}, CorrectAnswer = 1 },
+    { Question = "What does Math.expm1(0) return? (v90)", Answers = {"0", "1", "-1", "NaN"}, CorrectAnswer = 1 },
+
+    { Question = "What does Math.cbrt(-8) return? (v91)", Answers = {"-2", "2", "8", "0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log2(16) return? (v92)", Answers = {"4", "2", "8", "1"}, CorrectAnswer = 1 },
+    { Question = "What does Math.log10(1000) return? (v93)", Answers = {"3", "2", "10", "1000"}, CorrectAnswer = 1 },
+    { Question = "What does Math.floor(Math.random() * 100) return? (v94)", Answers = {"An integer between 0 and 99", "An integer between 1 and 100", "A float between 0 and 100", "Always 0"}, CorrectAnswer = 1 },
+    { Question = "What does Math.ceil(3.5) return? (v95)", Answers = {"3", "4", "3.5", "Error"}, CorrectAnswer = 2}
 
 QuestionBank.Object = {
 	{
